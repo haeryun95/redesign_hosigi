@@ -1,0 +1,127 @@
+.header {
+    background: var(--cream);
+    height: 8rem;
+    position: fixed;
+    z-index: 910;
+    width: 100%;
+}
+
+/* ===============================
+PC 버전
+=================================*/
+
+.header .pc_nav {
+    width: 100%;
+}
+.header .pc_nav .nav_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 7rem;
+}
+
+/* 로고 */
+.header .pc_nav .nav_inner h1.logo {
+    height: 8rem;
+    width: 12rem;
+}
+.header .pc_nav .nav_inner h1.logo img {
+}
+
+/* GNB */
+/* navigation */
+.header .pc_nav .nav_list {
+    display: flex;
+    gap: 1.6rem;
+    width: 100%;
+    max-width: 92.8rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 8rem;
+}
+.header .pc_nav .nav_list > li {
+    position: relative;
+    width: calc(100% / 4);
+    text-align: left;
+}
+.header .pc_nav .nav_list > li > a {
+    line-height: 8rem;
+    font-size: 2.4rem;
+    color: var(--main-deepBase);
+}
+
+/* navigation_ depth2 */
+.header .pc_nav .nav_list .nav_list_subMenu {
+    /* display: none; */
+    position: absolute;
+    z-index: 915;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    margin-top: 1rem;
+    border-right: 1px solid #d9d9d9;
+    height: 30rem;
+}
+.header .pc_nav .nav_list li:last-child .nav_list_subMenu {
+    border: none;
+}
+.header .pc_nav .nav_list .nav_list_subMenu li {
+}
+.header .pc_nav .nav_list .nav_list_subMenu li a {
+    width: 100%;
+    font-size: 2.2rem;
+    padding: 1.4rem 0;
+    text-align: left;
+}
+
+.header .pc_nav .nav_list .nav_list_subMenu li:hover a {
+    color: var(--main-primary);
+}
+
+/* bnt */
+.header .pc_nav .nav_inner .nav_bnt {
+    width: 14rem;
+    height: 5rem;
+    line-height: 5rem;
+    border-radius: 5rem;
+    color: var(--cream);
+    background: var(--main-primary);
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+/* nav_background */
+.header .pc_nav .nav_background {
+    position: relative;
+    z-index: 900;
+    height: 36rem;
+    background: var(--cream);
+    width: 100%;
+    border-top: 1px solid var(--main-primary);
+}
+.header .pc_nav .nav_background img {
+    position: absolute;
+    z-index: 905;
+    width: 30rem;
+    height: 20rem;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+/* dim */
+.header .dim {
+    display: none;
+}
+
+/* ===============================
+MB 버전
+=================================*/
+.heder .mb_nav {
+}
+.heder .mb_nav .nav_list {
+}
+.heder .mb_nav .nav_list > li {
+}
+.heder .mb_nav .nav_list > li > a {
+}

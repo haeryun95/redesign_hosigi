@@ -1,0 +1,16 @@
+:root {
+    /* color_main */
+    --main-primary: #ca0611;
+    --main-secondary: #f39200;
+    --main-deepBase: #55433c;
+    --main-support: #f8f8f8;
+    --main-natural: #959595;
+
+    /* color_side */
+    --gray: #d9d9d9;
+    --redBrown: #562913;
+    --highlight-orange: #ec6425;
+    --highlight-yellow: #f69f0d;
+    --white: #fff;
+    --cream: #fbf6f1;
+}

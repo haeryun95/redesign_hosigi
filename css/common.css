@@ -1,0 +1,46 @@
+/* common */
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* 01: 가장 옅은 그림자 (외곽선 대용, 아주 살짝 띄움) */
+.shadow_01 {
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.08);
+}
+/* 02: 일반적인 카드/버튼 (가장 많이 쓰임) */
+.shadow_02 {
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.12);
+}
+/* 03: 강조된 요소 */
+.shadow_03 {
+    box-shadow: 0px 8px 16px 4px rgba(0, 0, 0, 0.15);
+}
+/* 04: 드롭다운 메뉴, 툴팁 (공중에 확 뜬 느낌) */
+.shadow_04 {
+    box-shadow: 0px 12px 24px 6px rgba(0, 0, 0, 0.18);
+}
+/* 05: 모달, 팝업 (가장 깊이감이 느껴지는 단계) */
+.shadow_05 {
+    box-shadow: 0px 20px 40px 10px rgba(0, 0, 0, 0.22);
+}
+
+.transition {
+    transition: all 0.3s ease;
+}
+
+.dim {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    z-index: 900;
+}
