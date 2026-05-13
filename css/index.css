@@ -16,3 +16,6 @@
 /*섹션_히어로 HeroSection */
 @import url(./heroSection.css);
 @import url(./heroSection_res.css);
+
+/* 섹션_광고영상 */
+@import url(./commercialSection.css);

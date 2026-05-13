@@ -4,6 +4,7 @@
     position: fixed;
     z-index: 910;
     width: 100%;
+    top: 0;
 }
 
 /* ===============================
@@ -17,13 +18,17 @@ PC 버전
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 7rem;
+    padding: 0 26rem;
+    width: 100%;
+    position: fixed;
+    z-index: 920;
+    gap: 3.2rem;
 }
 
 /* 로고 */
 .header .pc_nav .nav_inner h1.logo {
     height: 8rem;
-    width: 12rem;
+    width: 14rem;
 }
 .header .pc_nav .nav_inner h1.logo img {
 }
@@ -32,27 +37,25 @@ PC 버전
 /* navigation */
 .header .pc_nav .nav_list {
     display: flex;
-    gap: 1.6rem;
     width: 100%;
-    max-width: 92.8rem;
-    align-items: flex-end;
+    max-width: 68rem;
+    align-items: center;
     justify-content: space-between;
     height: 8rem;
 }
 .header .pc_nav .nav_list > li {
     position: relative;
-    width: calc(100% / 4);
-    text-align: left;
+    text-align: center;
 }
 .header .pc_nav .nav_list > li > a {
     line-height: 8rem;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     color: var(--main-deepBase);
 }
 
 /* navigation_ depth2 */
 .header .pc_nav .nav_list .nav_list_subMenu {
-    /* display: none; */
+    display: none;
     position: absolute;
     z-index: 915;
     top: 100%;
@@ -70,9 +73,9 @@ PC 버전
 }
 .header .pc_nav .nav_list .nav_list_subMenu li a {
     width: 100%;
-    font-size: 2.2rem;
+    font-size: 18rem;
     padding: 1.4rem 0;
-    text-align: left;
+    text-align: center;
 }
 
 .header .pc_nav .nav_list .nav_list_subMenu li:hover a {
@@ -80,25 +83,38 @@ PC 버전
 }
 
 /* bnt */
+.header .pc_nav .nav_inner .nav_bntBox {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.6rem;
+}
+
 .header .pc_nav .nav_inner .nav_bnt {
-    width: 14rem;
-    height: 5rem;
-    line-height: 5rem;
+    width: 10rem;
+    height: 4rem;
+    line-height: 4rem;
     border-radius: 5rem;
     color: var(--cream);
     background: var(--main-primary);
     text-align: center;
-    font-size: 2.4rem;
+    font-size: 1.4rem;
 }
 
+.header .pc_nav .nav_inner .nav_bnt.brand_inquiry {
+    line-height: calc(4rem - 6px);
+    color: var(--main-primary);
+    background: var(--main-white);
+    border: 3px solid var(--main-primary);
+}
 /* nav_background */
 .header .pc_nav .nav_background {
+    display: none;
     position: relative;
+    padding-top: 8rem;
     z-index: 900;
-    height: 36rem;
+    min-height: 44rem;
     background: var(--cream);
     width: 100%;
-    border-top: 1px solid var(--main-primary);
 }
 .header .pc_nav .nav_background img {
     position: absolute;
@@ -117,11 +133,12 @@ PC 버전
 /* ===============================
 MB 버전
 =================================*/
-.heder .mb_nav {
+.header .mb_nav {
+    display: none;
 }
-.heder .mb_nav .nav_list {
+.header .mb_nav .nav_list {
 }
-.heder .mb_nav .nav_list > li {
+.header .mb_nav .nav_list > li {
 }
-.heder .mb_nav .nav_list > li > a {
+.header .mb_nav .nav_list > li > a {
 }
