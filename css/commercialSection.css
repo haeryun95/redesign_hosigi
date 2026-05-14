@@ -1,0 +1,57 @@
+section.commercialSection {
+    margin-top: 14rem;
+}
+
+section.commercialSection .container {
+}
+
+/* topBox */
+section.commercialSection .commercialTopBox {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+section.commercialSection .commercialTopBox h2 {
+    font-size: 2.8rem;
+    color: var(--main-secondary);
+}
+section.commercialSection .commercialTopBox a {
+    font-size: 2rem;
+    color: var(--main-primary);
+}
+
+/* bottom box */
+
+section.commercialSection .commercialBottomBox {
+    padding-bottom: 9rem;
+}
+section.commercialSection .commercialBottomBox ul {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+section.commercialSection .commercialBottomBox ul li {
+}
+section.commercialSection .commercialBottomBox ul li a {
+    position: relative;
+}
+section.commercialSection .commercialBottomBox ul li a img {
+    width: 45rem;
+    aspect-ratio: 16/9;
+    border-radius: 2rem;
+}
+
+/* 가상요소 - 플레이 아이콘 */
+
+section.commercialSection .commercialBottomBox ul li a::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    background: url(../image/icon_youtube_play.png) no-repeat;
+    background-position: center;
+}

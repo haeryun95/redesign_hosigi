@@ -13,6 +13,9 @@
 @import url(./header.css);
 @import url(./header_res.css);
 
+/* 메인 */
+@import url(./main.css);
+
 /*섹션_히어로 HeroSection */
 @import url(./heroSection.css);
 @import url(./heroSection_res.css);

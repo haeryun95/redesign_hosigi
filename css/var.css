@@ -1,14 +1,27 @@
 :root {
     /* color_main */
-    --main-primary: #ca0611;
+    --main-primary: #8d0007;
+    --main-support: #6e080d;
     --main-secondary: #55433c;
-    --main-deepBase: #55433c;
-    --main-support: #74090f;
+    --main-deepBase: #352c29;
     --main-natural: #959595;
     --main-white: #f8f8f8;
+    --main-bg: #fbf6f1;
 
     /* color_side */
     --gray: #d9d9d9;
     --white: #fff;
-    --cream: #fbf6f1;
+    --orange: #ff9052;
+
+    /* variant */
+    --red-variant-01: #ff2128;
+    --red-variant-02: #ed0021;
+    --red-variant-03: #ce001e;
+
+    /* shadow */
+    --shadow-01: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-02: 0px 4px 8px rgba(0, 0, 0, 0.12);
+    --shadow-03: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    --shadow-04: 0px 12px 24px rgba(0, 0, 0, 0.18);
+    --shadow-05: 0px 20px 40px rgba(0, 0, 0, 0.22);
 }

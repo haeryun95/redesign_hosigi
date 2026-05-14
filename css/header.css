@@ -1,10 +1,11 @@
 .header {
-    background: var(--cream);
-    height: 8rem;
-    position: fixed;
-    z-index: 910;
+    background: var(--main-bg);
     width: 100%;
+    height: 9rem;
+    position: fixed;
+    z-index: 990;
     top: 0;
+    box-shadow: var(--shadow-01);
 }
 
 /* ===============================
@@ -12,122 +13,117 @@ PC 버전
 =================================*/
 
 .header .pc_nav {
-    width: 100%;
+    height: 100%;
 }
 .header .pc_nav .nav_inner {
+    width: 100%;
+    max-width: 140rem;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 26rem;
-    width: 100%;
-    position: fixed;
-    z-index: 920;
-    gap: 3.2rem;
 }
 
 /* 로고 */
 .header .pc_nav .nav_inner h1.logo {
-    height: 8rem;
-    width: 14rem;
 }
 .header .pc_nav .nav_inner h1.logo img {
+    width: 10rem;
 }
 
 /* GNB */
 /* navigation */
 .header .pc_nav .nav_list {
     display: flex;
-    width: 100%;
-    max-width: 68rem;
-    align-items: center;
-    justify-content: space-between;
-    height: 8rem;
+    justify-content: center;
+    gap: 5rem;
+    font-size: 1.8rem;
 }
 .header .pc_nav .nav_list > li {
-    position: relative;
-    text-align: center;
 }
 .header .pc_nav .nav_list > li > a {
-    line-height: 8rem;
-    font-size: 1.8rem;
-    color: var(--main-deepBase);
+    padding: 1rem 2rem;
 }
-
-/* navigation_ depth2 */
-.header .pc_nav .nav_list .nav_list_subMenu {
-    display: none;
-    position: absolute;
-    z-index: 915;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    margin-top: 1rem;
-    border-right: 1px solid #d9d9d9;
-    height: 30rem;
-}
-.header .pc_nav .nav_list li:last-child .nav_list_subMenu {
-    border: none;
-}
-.header .pc_nav .nav_list .nav_list_subMenu li {
-}
-.header .pc_nav .nav_list .nav_list_subMenu li a {
-    width: 100%;
-    font-size: 18rem;
-    padding: 1.4rem 0;
-    text-align: center;
-}
-
-.header .pc_nav .nav_list .nav_list_subMenu li:hover a {
+.header .pc_nav .nav_list > li > a:hover {
     color: var(--main-primary);
 }
 
 /* bnt */
 .header .pc_nav .nav_inner .nav_bntBox {
     display: flex;
-    justify-content: space-between;
-    gap: 1.6rem;
+    gap: 0.8rem;
 }
-
 .header .pc_nav .nav_inner .nav_bnt {
+    cursor: pointer;
     width: 10rem;
     height: 4rem;
     line-height: 4rem;
-    border-radius: 5rem;
-    color: var(--cream);
-    background: var(--main-primary);
     text-align: center;
+    border-radius: 20rem;
     font-size: 1.4rem;
+    color: var(--main-bg);
+    background: var(--main-primary);
+    transition: all 0.3s ease;
 }
 
 .header .pc_nav .nav_inner .nav_bnt.brand_inquiry {
-    line-height: calc(4rem - 6px);
+    height: 4rem;
+    line-height: 4rem;
     color: var(--main-primary);
-    background: var(--main-white);
-    border: 3px solid var(--main-primary);
+    background: var(--main-bg);
+    border: 0.1rem solid var(--main-primary);
 }
+
+.header .pc_nav .nav_inner .nav_bnt:hover {
+    background: var(--red-variant-01);
+    color: var(--white);
+    border: none;
+}
+
+/* navigation_ depth2 */
+.header .pc_nav .nav_list .nav_list_subMenu {
+    display: none;
+    position: absolute;
+    z-index: 911;
+    top: 100%;
+    padding-top: 3rem;
+    /* display: flex; */
+    flex-direction: column;
+}
+.header .pc_nav .nav_list li:last-child .nav_list_subMenu {
+}
+.header .pc_nav .nav_list .nav_list_subMenu li {
+}
+.header .pc_nav .nav_list .nav_list_subMenu li a {
+    padding: 0.6rem 2rem;
+    font-size: 1.5rem;
+}
+
+.header .pc_nav .nav_list .nav_list_subMenu li:hover a {
+    color: var(--main-primary);
+}
+
 /* nav_background */
 .header .pc_nav .nav_background {
     display: none;
-    position: relative;
-    padding-top: 8rem;
-    z-index: 900;
-    min-height: 44rem;
-    background: var(--cream);
-    width: 100%;
-}
-.header .pc_nav .nav_background img {
     position: absolute;
-    z-index: 905;
-    width: 30rem;
-    height: 20rem;
-    bottom: 1rem;
-    right: 1rem;
+    padding: 2rem;
+    z-index: 910;
+    top: 100%;
+    width: 100%;
+    background: url("../image/header_background_logo_red.png") no-repeat var(--main-bg);
+    background-size: 20%;
+    background-position: bottom right;
+    border-top: 0.1rem solid var(--main-primary);
+    box-shadow: var(--shadow-03);
+    height: 26rem;
 }
 
 /* dim */
 .header .dim {
     display: none;
+    transition: height 0.5s ease;
 }
 
 /* ===============================

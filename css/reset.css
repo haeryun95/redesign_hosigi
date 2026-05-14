@@ -141,11 +141,12 @@ a {
     text-decoration: none;
     color: var(--main-deepBase);
 }
-
 html {
-    font-size: 62.5%; /* 브라우저 기본 16px의 62.5% = 10px */
+    font-size: 62.5%;
+    /* 브라우저 기본 16px의 62.5% = 10px */
     font-family: "Cafe24Ssurround";
 }
 body {
-    background-color: var(--cream);
+    background-color: var(--main-bg);
+    color: var(--main-deepBase);
 }
