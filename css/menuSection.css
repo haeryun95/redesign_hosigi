@@ -1,0 +1,64 @@
+section.menuSection {
+}
+
+.menuSection .menuSectionTitleBox {
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+}
+.menuSection .menuSectionTitleBox h2 {
+    width: 30%;
+    font-size: 2.8rem;
+    color: var(--main-secondary);
+}
+.menuSection .menuSectionTitleBox h2 .highlight {
+    color: var(--main-primary);
+}
+.menuSection .menuSectionTitleBox .line {
+    width: 80%;
+    border-bottom: 1px solid var(--main-deepBase);
+}
+
+/* tabs */
+.menuSection .menu_tab_list {
+    gap: 1.2rem;
+    display: flex;
+    padding-top: 6rem;
+    justify-content: center;
+}
+.menuSection .menu_tab_list li {
+}
+.menuSection .menu_tab_list li a {
+    color: var(--red-variant-03);
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    border: 0.3rem solid var(--red-variant-03);
+    font-size: 1.8rem;
+}
+.menuSection .menu_tab_list li a.active {
+    color: var(--white);
+    background: var(--red-variant-03);
+    border: 0.3rem solid var(--red-variant-03);
+}
+
+/* tabs contents */
+.menuSection .menu_tab_contents {
+}
+.menuSection .menu_tab_contents .menu_swiper {
+}
+.menuSection .menu_tab_contents .menu_swiper .swiper-slide {
+}
+.menuSection .menu_tab_contents .menu_swiper .swiper-slide img {
+}
+
+.menuSection .menu_tab_contents .menu-swiper-pagination {
+}
+
+.menuSection .menu_tab_contents .menu-swiper-button-prev {
+}
+.menuSection .menu_tab_contents .menu-swiper-button-prev img {
+}
+.menuSection .menu_tab_contents .menu-swiper-button-next {
+}
+.menuSection .menu_tab_contents .menu-swiper-button-next img {
+}
