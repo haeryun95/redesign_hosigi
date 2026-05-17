@@ -1,0 +1,185 @@
+/* ==============================
+   Footer
+============================== */
+footer.footer {
+}
+
+.footer {
+  background: #55433c;
+  padding: 4rem 0;
+}
+
+.footer .container {
+  width: 1200px;
+  max-width: 92%;
+  margin: 0 auto;
+}
+
+/* ==============================
+   Footer Inner
+============================== */
+.footer .footerInner {
+  position: relative;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ==============================
+   Footer Link
+============================== */
+.footer .footerLinkList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+  margin-bottom: 4.8rem;
+}
+
+.footer .footerLinkList li {
+  position: relative;
+}
+
+.footer .footerLinkList li:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -0.8rem;
+  top: 50%;
+  width: 1px;
+  height: 1.1rem;
+  background: rgba(255, 255, 255, 0.65);
+  transform: translateY(-50%);
+}
+
+.footer .footerLinkList li a {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
+}
+
+/* ==============================
+   Footer Content
+============================== */
+.footer .footerContent {
+  display: grid;
+  grid-template-columns: 18rem 1fr 12rem;
+  align-items: end;
+  gap: 4rem;
+}
+
+/* ==============================
+   Footer Logo
+============================== */
+.footer .footerLogoBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footerLogo {
+  display: block;
+}
+
+.footer .footerLogo img {
+  display: block;
+  width: 12rem;
+  height: auto;
+}
+
+/* ==============================
+   Footer Info
+============================== */
+.footer .footerInfoBox {
+  color: #fff;
+}
+
+.footer .footerInfoBox p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer .footerInfoBox .copyright {
+  margin-top: 1.4rem;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* ==============================
+   Footer SNS
+============================== */
+.footer .footerSnsList {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.footer .footerSnsList li {
+}
+
+.footer .footerSnsList li a {
+  display: block;
+}
+
+.footer .footerSnsList li a img {
+  display: block;
+  width: 2.8rem;
+  height: 2.8rem;
+  object-fit: contain;
+}
+
+/* ==============================
+   Responsive - Tablet
+============================== */
+@media (max-width: 1024px) {
+  .footer .footerContent {
+    grid-template-columns: 14rem 1fr 10rem;
+    gap: 3rem;
+  }
+
+  .footer .footerLogo img {
+    width: 11rem;
+  }
+}
+
+/* ==============================
+   Responsive - Mobile
+============================== */
+@media (max-width: 768px) {
+  .footer {
+    padding: 4.8rem 0;
+  }
+
+  .footer .footerInner {
+    min-height: auto;
+  }
+
+  .footer .footerLinkList {
+    flex-wrap: wrap;
+    gap: 1rem 1.6rem;
+    margin-bottom: 3.2rem;
+  }
+
+  .footer .footerLinkList li a {
+    font-size: 1.3rem;
+  }
+
+  .footer .footerContent {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    text-align: center;
+  }
+
+  .footer .footerLogo img {
+    width: 12rem;
+  }
+
+  .footer .footerSnsList {
+    justify-content: center;
+  }
+}

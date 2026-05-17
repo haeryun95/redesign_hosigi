@@ -23,5 +23,11 @@
 /* 섹션_광고영상 */
 @import url(./commercialSection.css);
 
-/* 섹션_메뉴 */
+/* 섹션_메뉴*/
 @import url(./menuSection.css);
+
+/* 섹션_스토리배너*/
+@import url(./storyBannerSection.css);
+
+/* 푸터*/
+@import url(./footer.css);
