@@ -7,35 +7,33 @@
         url("../font/Cafe24Ssurround-v2.0.ttf") format("truetype");
     font-style: normal;
 }
-/* Gmarket Sans - Light */
-@font-face {
-    font-family: "GmarketSans";
-    src:
-        url("../font/GmarketSansTTFLight.woff2") format("woff2"),
-        url("../font/GmarketSansTTFLight.woff") format("woff"),
-        url("../font/GmarketSansTTFLight.ttf") format("truetype");
-    font-weight: 300;
-    font-style: normal;
-}
 
-/* Gmarket Sans - Medium */
+/* 넷마블 */
 @font-face {
-    font-family: "GmarketSans";
+    font-family: "netmable";
     src:
-        url("../font/GmarketSansTTFMedium.woff2") format("woff2"),
-        url("../font/GmarketSansTTFMedium.woff") format("woff"),
-        url("../font/GmarketSansTTFMedium.ttf") format("truetype");
-    font-weight: 500;
+        url("../font/netmarbleB.woff2") format("woff2"),
+        url("../font/netmarbleB.woff") format("woff"),
+        url("../font/netmarbleB.ttf") format("truetype");
     font-style: normal;
-}
-
-/* Gmarket Sans - Bold */
-@font-face {
-    font-family: "GmarketSans";
-    src:
-        url("../font/GmarketSansTTFBold.woff2") format("woff2"),
-        url("../font/GmarketSansTTFBold.woff") format("woff"),
-        url("../font/GmarketSansTTFBold.ttf") format("truetype");
     font-weight: 700;
+}
+@font-face {
+    font-family: "netmable";
+    src:
+        url("../font/netmarbleM.woff2") format("woff2"),
+        url("../font/netmarbleM.woff") format("woff"),
+        url("../font/netmarbleM.ttf") format("truetype");
     font-style: normal;
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "netmable";
+    src:
+        url("../font/netmarblel.woff2") format("woff2"),
+        url("../font/netmarblel.woff") format("woff"),
+        url("../font/netmarblel.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
 }
