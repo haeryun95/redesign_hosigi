@@ -8,6 +8,11 @@ img {
     max-width: 140rem;
     margin: 0 auto;
 }
+
+.section {
+    padding: 7rem 0;
+}
+
 .transition {
     transition: all 0.3s ease;
 }

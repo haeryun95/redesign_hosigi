@@ -1,39 +1,87 @@
 <!doctype html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>호식이두마리치킨</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/swiper.css" />
+        <link rel="stylesheet" href="css/index.css" />
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>호식이두마리치킨</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/swiper.css" />
-    <link rel="stylesheet" href="css/index.css" />
+        <!-- library -->
+        <script defer src="module/jquery-4.0.0.min.js"></script>
+        <script defer src="module/swiper-bundle.min.js"></script>
 
-    <!-- library -->
-    <script defer src="module/jquery-4.0.0.min.js"></script>
-    <script defer src="module/swiper-bundle.min.js"></script>
+        <!-- js -->
+        <script defer src="module/custom_swiper.js"></script>
+        <script defer src="module/header.js"></script>
+        <script defer src="module/main.js"></script>
+        <script defer src="module/footer.js"></script>
+    </head>
 
-    <!-- js -->
-    <script defer src="module/custom_swiper.js"></script>
-    <script defer src="module/header.js"></script>
-    <script defer src="module/main.js"></script>
-    <script defer src="module/footer.js"></script>
-</head>
+    <body>
+        <div class="wrap">
+            <!-- header -->
+            <header class="header">
+                <div class="pc_nav">
+                    <div class="nav_inner">
+                        <h1 class="logo">
+                            <a href="#">
+                                <img src="image/logo.png" alt="로고 이미지" />
+                            </a>
+                        </h1>
+                        <ul class="nav_list">
+                            <li>
+                                <a href="#">브랜드소개</a>
+                                <ul class="nav_list_subMenu">
+                                    <li><a href="#">기업개요</a></li>
+                                    <li><a href="#">기업연혁</a></li>
+                                    <li><a href="#">언론 보도</a></li>
+                                    <li><a href="#">수상 내역</a></li>
+                                    <li><a href="#">사회 공헌</a></li>
+                                    <li><a href="#">지속가능경영</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">메뉴안내</a>
+                                <ul class="nav_list_subMenu">
+                                    <li><a href="#">전체메뉴</a></li>
+                                    <li><a href="#">치킨 메뉴</a></li>
+                                    <li><a href="#">부위별 메뉴</a></li>
+                                    <li><a href="#">사이드 메뉴</a></li>
+                                    <li><a href="#">알레르기 성분정보</a></li>
+                                    <li><a href="#">조리 전 중량</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">이벤트</a>
+                                <ul class="nav_list_subMenu">
+                                    <li><a href="#">멤버쉽 혜택</a></li>
+                                    <li><a href="#">이벤트 뉴스</a></li>
+                                    <li><a href="#">SNS 및 블로그</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                                <ul class="nav_list_subMenu">
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">고객문의</a></li>
+                                    <li><a href="#">상품권 문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="nav_bntBox">
+                            <a class="nav_bnt" href="#">회사 소개</a>
+                            <a class="nav_bnt brand_inquiry" href="#">창업 문의</a>
+                        </div>
+                    </div>
+                    <div class="nav_background"></div>
+                </div>
 
-<body>
-    <div class="wrap">
-        <!-- header -->
-        <header class="header">
-            <div class="pc_nav">
-                <div class="nav_inner">
-                    <h1 class="logo">
-                        <a href="#">
-                            <img src="image/logo.png" alt="로고 이미지" />
-                        </a>
-                    </h1>
+                <div class="mb_nav">
                     <ul class="nav_list">
                         <li>
-                            <a href="#">브랜드소개</a>
+                            <a href="#">회사소개</a>
                             <ul class="nav_list_subMenu">
                                 <li><a href="#">기업개요</a></li>
                                 <li><a href="#">기업연혁</a></li>
@@ -71,495 +119,434 @@
                             </ul>
                         </li>
                     </ul>
-                    <div class="nav_bntBox">
-                        <a class="nav_bnt" href="#">회사 소개</a>
-                        <a class="nav_bnt brand_inquiry" href="#">창업 문의</a>
-                    </div>
                 </div>
-                <div class="nav_background"></div>
-            </div>
+                <div class="dim"></div>
+            </header>
+            <!-- /header -->
+            <!-- main -->
+            <main class="main">
+                <section class="section heroSection">
+                    <div class="container">
+                        <div class="hero_slideBox">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="img_Box">
+                                            <img src="/image/heroSection_mainMbanner_01.png" alt="수라깐풍치킨 배너" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img_Box">
+                                            <img src="/image/heroSection_mainMbanner_01.png" alt="수라깐풍치킨 배너" />
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="img_Box">
+                                            <img src="/image/heroSection_mainMbanner_01.png" alt="수라깐풍치킨 배너" />
+                                        </div>
+                                    </div>
+                                </div>
 
-            <div class="mb_nav">
-                <ul class="nav_list">
-                    <li>
-                        <a href="#">회사소개</a>
-                        <ul class="nav_list_subMenu">
-                            <li><a href="#">기업개요</a></li>
-                            <li><a href="#">기업연혁</a></li>
-                            <li><a href="#">언론 보도</a></li>
-                            <li><a href="#">수상 내역</a></li>
-                            <li><a href="#">사회 공헌</a></li>
-                            <li><a href="#">지속가능경영</a></li>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="cta_buttons">
+                            <div class="cta_button">
+                                <div class="cta_icon">
+                                    <img src="/image/icon_phone_r.png" alt=" " class="cta_icons" />
+                                </div>
+                                <h2 class="cta_title">전화주문</h2>
+                                <p class="cta_desc">1688-9922</p>
+                            </div>
+                            <div class="cta_button">
+                                <div class="cta_icon">
+                                    <img src="/image/icon_delly_r.png" alt=" " class="cta_icons" />
+                                </div>
+                                <h2 class="cta_title">배달주문</h2>
+                                <p class="cta_desc">라이더가 가요</p>
+                            </div>
+                            <div class="cta_button">
+                                <div class="cta_icon">
+                                    <img src="/image/icon_bill_r.png" alt=" " class="cta_icons" />
+                                </div>
+                                <h2 class="cta_title">포장주문</h2>
+                                <p class="cta_desc">직접 찾아가요</p>
+                            </div>
+                            <div class="cta_button">
+                                <div class="cta_icon">
+                                    <img src="/image/icon_location_r.png" alt=" " class="cta_icons" />
+                                </div>
+                                <h2 class="cta_title">매장찾기</h2>
+                                <p class="cta_desc">가까운 매장 찾기</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="commercialSection section">
+                    <div class="container">
+                        <div class="commercialTopBox">
+                            <h2>광고 영상</h2>
+                            <a href="#">더보기</a>
+                        </div>
+                        <div class="commercialBottomBox">
+                            <ul class="videoBox">
+                                <ul class="list">
+                                    <li>
+                                        <a href="">
+                                            <img src="/image/youtube_thumb_01.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="/image/youtube_thumb_02.png" alt="" />
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <img src="/image/youtube_thumb_03.png" alt="" />
+                                        </a>
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="menuSection section">
+                    <div class="container">
+                        <div class="menuSectionTitleBox">
+                            <h2><span class="highlight">메뉴</span>, 호식이가 선보이는 맛!</h2>
+                            <div class="line"></div>
+                        </div>
+
+                        <ul class="menu_tab_list">
+                            <li class="active">
+                                <a href="#tab_all">전체</a>
+                            </li>
+                            <li>
+                                <a href="#tab_best">베스트</a>
+                            </li>
+                            <li>
+                                <a href="#tab_part">부위별</a>
+                            </li>
+                            <li>
+                                <a href="#tab_side">사이드</a>
+                            </li>
                         </ul>
-                    </li>
-                    <li>
-                        <a href="#">메뉴안내</a>
-                        <ul class="nav_list_subMenu">
-                            <li><a href="#">전체메뉴</a></li>
-                            <li><a href="#">치킨 메뉴</a></li>
-                            <li><a href="#">부위별 메뉴</a></li>
-                            <li><a href="#">사이드 메뉴</a></li>
-                            <li><a href="#">알레르기 성분정보</a></li>
-                            <li><a href="#">조리 전 중량</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">이벤트</a>
-                        <ul class="nav_list_subMenu">
-                            <li><a href="#">멤버쉽 혜택</a></li>
-                            <li><a href="#">이벤트 뉴스</a></li>
-                            <li><a href="#">SNS 및 블로그</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">고객센터</a>
-                        <ul class="nav_list_subMenu">
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">고객문의</a></li>
-                            <li><a href="#">상품권 문의</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="dim"></div>
-        </header>
-        <!-- /header -->
-        <!-- main -->
-        <main class="main">
-            <section class="section heroSection">
+
+                        <!-- 전체 -->
+                        <div class="menu_tab_contents active" id="tab_all">
+                            <div class="menu_swiper_box">
+                                <div class="menu_swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img class="menuBadge" src="./image/menu_badge.png" alt="신메뉴" />
+                                                <img src="./image/all_menu_01.png" alt="신메뉴" />
+                                                <div class="menuText">
+                                                    <h3>신메뉴</h3>
+                                                    <p>호식이가 새롭게<br />선보이는 맛</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/all_menu_02.png" alt="후라이드" />
+                                                <div class="menuText">
+                                                    <h3>후라이드</h3>
+                                                    <p>바삭바삭한 껍질 뒤에<br />숨겨진 맛</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/all_menu_03.png" alt="양념치킨" />
+                                                <div class="menuText">
+                                                    <h3>양념치킨</h3>
+                                                    <p>달콤매콤한 소스가<br />가득한 맛</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/all_menu_04.png" alt="간장치킨" />
+                                                <div class="menuText">
+                                                    <h3>간장치킨</h3>
+                                                    <p>짭조름하고 깊은<br />간장의 풍미</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/all_menu_05.png" alt="매운치킨" />
+                                                <div class="menuText">
+                                                    <h3>매운치킨</h3>
+                                                    <p>화끈하게 당기는<br />매콤한 맛</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-swiper-button-prev"></div>
+                                <div class="menu-swiper-button-next"></div>
+                            </div>
+                        </div>
+
+                        <!-- 베스트 -->
+                        <div class="menu_tab_contents" id="tab_best">
+                            <div class="menu_swiper_box">
+                                <div class="menu_swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/best_menu_01.png" alt="베스트 메뉴" />
+                                                <div class="menuText">
+                                                    <h3>베스트 1</h3>
+                                                    <p>가장 사랑받는<br />대표 메뉴</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/best_menu_02.png" alt="베스트 메뉴" />
+                                                <div class="menuText">
+                                                    <h3>베스트 2</h3>
+                                                    <p>꾸준히 인기 있는<br />호식이 메뉴</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/best_menu_03.png" alt="베스트 메뉴" />
+                                                <div class="menuText">
+                                                    <h3>베스트 3</h3>
+                                                    <p>한 번 먹으면<br />또 찾는 맛</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/best_menu_04.png" alt="베스트 메뉴" />
+                                                <div class="menuText">
+                                                    <h3>베스트 4</h3>
+                                                    <p>남녀노소 좋아하는<br />인기 메뉴</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-swiper-button-prev"></div>
+                                <div class="menu-swiper-button-next"></div>
+                            </div>
+                        </div>
+
+                        <!-- 부위별 -->
+                        <div class="menu_tab_contents" id="tab_part">
+                            <div class="menu_swiper_box">
+                                <div class="menu_swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/part_menu_01.png" alt="윙봉" />
+                                                <div class="menuText">
+                                                    <h3>윙봉</h3>
+                                                    <p>먹기 좋고 고소한<br />인기 부위</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/part_menu_02.png" alt="순살" />
+                                                <div class="menuText">
+                                                    <h3>순살</h3>
+                                                    <p>간편하게 즐기는<br />담백한 치킨</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/part_menu_03.png" alt="다리" />
+                                                <div class="menuText">
+                                                    <h3>다리</h3>
+                                                    <p>육즙 가득한<br />든든한 부위</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/part_menu_04.png" alt="날개" />
+                                                <div class="menuText">
+                                                    <h3>날개</h3>
+                                                    <p>바삭하고 고소한<br />별미 부위</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-swiper-button-prev"></div>
+                                <div class="menu-swiper-button-next"></div>
+                            </div>
+                        </div>
+
+                        <!-- 사이드 -->
+                        <div class="menu_tab_contents" id="tab_side">
+                            <div class="menu_swiper_box">
+                                <div class="menu_swiper swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/side_menu_01.png" alt="사이드 메뉴" />
+                                                <div class="menuText">
+                                                    <h3>감자튀김</h3>
+                                                    <p>바삭하게 즐기는<br />든든한 사이드</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/side_menu_02.png" alt="사이드 메뉴" />
+                                                <div class="menuText">
+                                                    <h3>치즈볼</h3>
+                                                    <p>쫀득하고 고소한<br />인기 사이드</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/side_menu_03.png" alt="사이드 메뉴" />
+                                                <div class="menuText">
+                                                    <h3>떡볶이</h3>
+                                                    <p>매콤달콤하게<br />곁들이는 맛</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="swiper-slide">
+                                            <a href="#" class="menuCard">
+                                                <img src="./image/side_menu_04.png" alt="사이드 메뉴" />
+                                                <div class="menuText">
+                                                    <h3>콜라</h3>
+                                                    <p>치킨과 잘 어울리는<br />시원한 조합</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="menu-swiper-button-prev"></div>
+                                <div class="menu-swiper-button-next"></div>
+                            </div>
+                        </div>
+
+                        <div class="menuMoreBtnBox">
+                            <a href="#" class="menuMoreBtn">더보기</a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="storySection section">
+                    <div class="container">
+                        <div class="storySectionTitleBox">
+                            <h2><span class="highlight">치킨</span>, 그 이상의 따뜻한 이야기</h2>
+                            <div class="line"></div>
+                        </div>
+
+                        <div class="storyGrid">
+                            <div class="storyLeft">
+                                <a href="#" class="storyBanner storyBanner01">
+                                    <img src="./image/grid_banner_01.png" alt="위생등급 매우 우수" />
+                                </a>
+
+                                <a href="#" class="storyBanner storyBanner02">
+                                    <img src="./image/grid_banner_02.png" alt="팔로워 이벤트" />
+                                </a>
+                            </div>
+
+                            <div class="storyRight">
+                                <a href="#" class="storyBanner storyBanner03">
+                                    <img src="./image/grid_banner_03.png" alt="간장치킨" />
+                                </a>
+
+                                <a href="#" class="storyBanner storyBanner04">
+                                    <img src="./image/grid_banner_04.png" alt="치즈볼 3종 세트" />
+                                </a>
+                            </div>
+
+                            <a href="#" class="storyBanner storyBanner05">
+                                <img src="./image/grid_banner_05.png" alt="멤버십 앱 론칭" />
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!-- /main -->
+            <!-- footer -->
+            <footer class="footer">
                 <div class="container">
-                    <div class="hero_slideBox">
-                        <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="img_Box">
-                                        <img src="/image/heroSection_mainMbanner_01.png" alt="수라깐풍치킨 배너" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img_Box">
-                                        <img src="/image/heroSection_mainMbanner_01.png" alt="수라깐풍치킨 배너" />
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="img_Box">
-                                        <img src="/image/heroSection_mainMbanner_01.png" alt="수라깐풍치킨 배너" />
-                                    </div>
-                                </div>
+                    <div class="footerInner">
+                        <ul class="footerLinkList">
+                            <li>
+                                <a href="#">이메일무단수집거부</a>
+                            </li>
+                            <li>
+                                <a href="#">개인정보처리방침</a>
+                            </li>
+                            <li>
+                                <a href="#">가맹점주공간 (OMS)</a>
+                            </li>
+                        </ul>
+
+                        <div class="footerContent">
+                            <div class="footerLogoBox">
+                                <a href="#" class="footerLogo">
+                                    <img src="./image/logo_white.png" alt="호식이두마리치킨" />
+                                </a>
                             </div>
 
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                    <div class="cta_buttons">
-                        <div class="cta_button">
-                            <div class="cta_icon">
-                                <img src="/image/icon_phone_r.png" alt=" " class="cta_icons" />
+                            <div class="footerInfoBox">
+                                <p>서울특별시 강남구 학동로 337 H타워 대표전화 1688-9922 | 대표자: 최호식</p>
+                                <p>사업자등록번호: 504-07-99251</p>
+                                <p class="copyright">Copyright © HOSIGI. All rights reserved.</p>
                             </div>
-                            <h2 class="cta_title">전화주문</h2>
-                            <p class="cta_desc">1688-9922</p>
-                        </div>
-                        <div class="cta_button">
-                            <div class="cta_icon">
-                                <img src="/image/icon_delly_r.png" alt=" " class="cta_icons" />
-                            </div>
-                            <h2 class="cta_title">배달주문</h2>
-                            <p class="cta_desc">라이더가 가요</p>
-                        </div>
-                        <div class="cta_button">
-                            <div class="cta_icon">
-                                <img src="/image/icon_bill_r.png" alt=" " class="cta_icons" />
-                            </div>
-                            <h2 class="cta_title">포장주문</h2>
-                            <p class="cta_desc">직접 찾아가요</p>
-                        </div>
-                        <div class="cta_button">
-                            <div class="cta_icon">
-                                <img src="/image/icon_location_r.png" alt=" " class="cta_icons" />
-                            </div>
-                            <h2 class="cta_title">매장찾기</h2>
-                            <p class="cta_desc">가까운 매장 찾기</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
-            <section class="commercialSection">
-                <div class="container">
-                    <div class="commercialTopBox">
-                        <h2>광고 영상</h2>
-                        <a href="#">더보기</a>
-                    </div>
-                    <div class="commercialBottomBox">
-                        <ul class="videoBox">
-                            <ul class="list">
+                            <ul class="footerSnsList">
                                 <li>
-                                    <a href="">
-                                        <img src="/image/youtube_thumb_01.png" alt="" />
+                                    <a href="#" aria-label="인스타그램">
+                                        <img src="./image/sns_01.png" alt="인스타그램" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        <img src="/image/youtube_thumb_02.png" alt="" />
+                                    <a href="#" aria-label="유튜브">
+                                        <img src="./image/sns_02.png" alt="유튜브" />
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="">
-                                        <img src="/image/youtube_thumb_03.png" alt="" />
+                                    <a href="#" aria-label="블로그">
+                                        <img src="./image/sns_03.png" alt="블로그" />
                                     </a>
                                 </li>
                             </ul>
-                        </ul>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <section class="menuSection">
-                <div class="container">
-                    <div class="menuSectionTitleBox">
-                        <h2>
-                            <span class="highlight">메뉴</span>
-                            , 호식이가 선보이는 맛!
-                        </h2>
-                        <div class="line"></div>
-                    </div>
-
-                    <ul class="menu_tab_list">
-                        <li class="active">
-                            <a href="#tab_all">전체</a>
-                        </li>
-                        <li>
-                            <a href="#tab_best">베스트</a>
-                        </li>
-                        <li>
-                            <a href="#tab_part">부위별</a>
-                        </li>
-                        <li>
-                            <a href="#tab_side">사이드</a>
-                        </li>
-                    </ul>
-
-                    <!-- 전체 -->
-                    <div class="menu_tab_contents active" id="tab_all">
-                        <div class="menu_swiper_box">
-                            <div class="menu_swiper swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img class="menuBadge" src="./image/menu_badge.png" alt="신메뉴">
-                                            <img src="./image/all_menu_01.png" alt="신메뉴">
-                                            <div class="menuText">
-                                                <h3>신메뉴</h3>
-                                                <p>호식이가 새롭게<br>선보이는 맛</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/all_menu_02.png" alt="후라이드">
-                                            <div class="menuText">
-                                                <h3>후라이드</h3>
-                                                <p>바삭바삭한 껍질 뒤에<br>숨겨진 맛</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/all_menu_03.png" alt="양념치킨">
-                                            <div class="menuText">
-                                                <h3>양념치킨</h3>
-                                                <p>달콤매콤한 소스가<br>가득한 맛</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/all_menu_04.png" alt="간장치킨">
-                                            <div class="menuText">
-                                                <h3>간장치킨</h3>
-                                                <p>짭조름하고 깊은<br>간장의 풍미</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/all_menu_05.png" alt="매운치킨">
-                                            <div class="menuText">
-                                                <h3>매운치킨</h3>
-                                                <p>화끈하게 당기는<br>매콤한 맛</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-swiper-button-prev"></div>
-                            <div class="menu-swiper-button-next"></div>
-                        </div>
-                    </div>
-
-                    <!-- 베스트 -->
-                    <div class="menu_tab_contents" id="tab_best">
-                        <div class="menu_swiper_box">
-                            <div class="menu_swiper swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/best_menu_01.png" alt="베스트 메뉴">
-                                            <div class="menuText">
-                                                <h3>베스트 1</h3>
-                                                <p>가장 사랑받는<br>대표 메뉴</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/best_menu_02.png" alt="베스트 메뉴">
-                                            <div class="menuText">
-                                                <h3>베스트 2</h3>
-                                                <p>꾸준히 인기 있는<br>호식이 메뉴</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/best_menu_03.png" alt="베스트 메뉴">
-                                            <div class="menuText">
-                                                <h3>베스트 3</h3>
-                                                <p>한 번 먹으면<br>또 찾는 맛</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/best_menu_04.png" alt="베스트 메뉴">
-                                            <div class="menuText">
-                                                <h3>베스트 4</h3>
-                                                <p>남녀노소 좋아하는<br>인기 메뉴</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-swiper-button-prev"></div>
-                            <div class="menu-swiper-button-next"></div>
-                        </div>
-                    </div>
-
-                    <!-- 부위별 -->
-                    <div class="menu_tab_contents" id="tab_part">
-                        <div class="menu_swiper_box">
-                            <div class="menu_swiper swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/part_menu_01.png" alt="윙봉">
-                                            <div class="menuText">
-                                                <h3>윙봉</h3>
-                                                <p>먹기 좋고 고소한<br>인기 부위</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/part_menu_02.png" alt="순살">
-                                            <div class="menuText">
-                                                <h3>순살</h3>
-                                                <p>간편하게 즐기는<br>담백한 치킨</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/part_menu_03.png" alt="다리">
-                                            <div class="menuText">
-                                                <h3>다리</h3>
-                                                <p>육즙 가득한<br>든든한 부위</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/part_menu_04.png" alt="날개">
-                                            <div class="menuText">
-                                                <h3>날개</h3>
-                                                <p>바삭하고 고소한<br>별미 부위</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-swiper-button-prev"></div>
-                            <div class="menu-swiper-button-next"></div>
-                        </div>
-                    </div>
-
-                    <!-- 사이드 -->
-                    <div class="menu_tab_contents" id="tab_side">
-                        <div class="menu_swiper_box">
-                            <div class="menu_swiper swiper">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/side_menu_01.png" alt="사이드 메뉴">
-                                            <div class="menuText">
-                                                <h3>감자튀김</h3>
-                                                <p>바삭하게 즐기는<br>든든한 사이드</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/side_menu_02.png" alt="사이드 메뉴">
-                                            <div class="menuText">
-                                                <h3>치즈볼</h3>
-                                                <p>쫀득하고 고소한<br>인기 사이드</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/side_menu_03.png" alt="사이드 메뉴">
-                                            <div class="menuText">
-                                                <h3>떡볶이</h3>
-                                                <p>매콤달콤하게<br>곁들이는 맛</p>
-                                            </div>
-                                        </a>
-                                    </div>
-
-                                    <div class="swiper-slide">
-                                        <a href="#" class="menuCard">
-                                            <img src="./image/side_menu_04.png" alt="사이드 메뉴">
-                                            <div class="menuText">
-                                                <h3>콜라</h3>
-                                                <p>치킨과 잘 어울리는<br>시원한 조합</p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="menu-swiper-button-prev"></div>
-                            <div class="menu-swiper-button-next"></div>
-                        </div>
-                    </div>
-
-                    <div class="menuMoreBtnBox">
-                        <a href="#" class="menuMoreBtn">더보기</a>
-                    </div>
-                </div>
-            </section>
-            <section class="storySection">
-                <div class="container">
-                    <div class="storySectionTitleBox">
-                        <h2>
-                            <span class="highlight">치킨</span>, 그 이상의 따뜻한 이야기
-                        </h2>
-                    </div>
-
-                    <div class="storyGrid">
-                        <div class="storyLeft">
-                            <a href="#" class="storyBanner storyBanner01">
-                                <img src="./image/grid_banner_01.png" alt="위생등급 매우 우수">
-                            </a>
-
-                            <a href="#" class="storyBanner storyBanner02">
-                                <img src="./image/grid_banner_02.png" alt="팔로워 이벤트">
-                            </a>
-                        </div>
-
-                        <div class="storyRight">
-                            <a href="#" class="storyBanner storyBanner03">
-                                <img src="./image/grid_banner_03.png" alt="간장치킨">
-                            </a>
-
-                            <a href="#" class="storyBanner storyBanner04">
-                                <img src="./image/grid_banner_04.png" alt="치즈볼 3종 세트">
-                            </a>
-                        </div>
-
-                        <a href="#" class="storyBanner storyBanner05">
-                            <img src="./image/grid_banner_05.png" alt="멤버십 앱 론칭">
-                        </a>
-                    </div>
-                </div>
-            </section>
-
-        </main>
-        <!-- /main -->
-        <!-- footer -->
-        <footer class="footer">
-            <div class="container">
-                <div class="footerInner">
-                    <ul class="footerLinkList">
-                        <li>
-                            <a href="#">이메일무단수집거부</a>
-                        </li>
-                        <li>
-                            <a href="#">개인정보처리방침</a>
-                        </li>
-                        <li>
-                            <a href="#">가맹점주공간 (OMS)</a>
-                        </li>
-                    </ul>
-
-                    <div class="footerContent">
-                        <div class="footerLogoBox">
-                            <a href="#" class="footerLogo">
-                                <img src="./image/logo_white.png" alt="호식이두마리치킨">
-                            </a>
-                        </div>
-
-                        <div class="footerInfoBox">
-                            <p>
-                                서울특별시 강남구 학동로 337 H타워
-                                대표전화 1688-9922 | 대표자: 최호식
-                            </p>
-                            <p>
-                                사업자등록번호: 504-07-99251
-                            </p>
-                            <p class="copyright">
-                                Copyright © HOSIGI. All rights reserved.
-                            </p>
-                        </div>
-
-                        <ul class="footerSnsList">
-                            <li>
-                                <a href="#" aria-label="인스타그램">
-                                    <img src="./image/sns_01.png" alt="인스타그램">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" aria-label="유튜브">
-                                    <img src="./image/sns_02.png" alt="유튜브">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" aria-label="블로그">
-                                    <img src="./image/sns_03.png" alt="블로그">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- /footer -->
-    </div>
-</body>
-
+            </footer>
+            <!-- /footer -->
+        </div>
+    </body>
 </html>

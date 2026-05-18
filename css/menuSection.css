@@ -5,117 +5,111 @@ section.menuSection {
 }
 
 .menuSection {
-  padding: 80px 0 70px;
-  background: #fff6ec;
-  overflow: hidden;
 }
 
 .menuSection .container {
-  width: 1400px;
-  max-width: 92%;
-  margin: 0 auto;
-  position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* ==============================
    Menu Section Title
 ============================== */
 .menuSection .menuSectionTitleBox {
-  width: 100%;
-  padding: 2rem 0;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  margin-bottom: 42px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 6rem;
 }
 
 .menuSection .menuSectionTitleBox h2 {
-  width: 30%;
-  flex-shrink: 0;
-  font-size: 28px;
-  font-weight: 800;
-  color: #4d3931;
+    width: 30%;
+    flex-shrink: 0;
+    font-size: 28px;
+    font-weight: 800;
+    color: #4d3931;
 }
 
 .menuSection .menuSectionTitleBox h2 .highlight {
-  color: #d90000;
+    color: #d90000;
 }
 
 .menuSection .menuSectionTitleBox .line {
-  width: 100%;
-  height: 1px;
-  background: #8a776f;
-  opacity: 0.7;
-  border-bottom: 1px solid var(--main-deepBase);
+    width: 100%;
+    height: 1px;
+    background: #8a776f;
+    opacity: 0.7;
+    border-bottom: 1px solid var(--main-deepBase);
 }
 
 /* ==============================
    Menu Tabs
 ============================== */
 .menuSection .menu_tab_list {
-  gap: 10px;
-  display: flex;
-  padding-top: 6rem;
-  justify-content: center;
-  margin-bottom: 42px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
 }
 
 .menuSection .menu_tab_list li {
 }
 
 .menuSection .menu_tab_list li a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 88px;
-  height: 36px;
-  color: #e60012;
-  border-radius: 999px;
-  padding: 1rem 2rem;
-  border: 2px solid #e60012;
-  font-size: 14px;
-  font-weight: 800;
-  background: #fff6ec;
-  transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 88px;
+    height: 36px;
+    color: #e60012;
+    border-radius: 999px;
+    padding: 1rem 2rem;
+    border: 2px solid #e60012;
+    font-size: 14px;
+    font-weight: 800;
+    background: #fff6ec;
+    transition: 0.2s ease;
 }
 
 .menuSection .menu_tab_list li a.active {
-  color: var(--white);
-  background: var(--red-variant-03);
-  border: 0.3rem solid var(--red-variant-03);
+    color: var(--white);
+    background: var(--red-variant-03);
+    border: 0.3rem solid var(--red-variant-03);
 }
 
 .menuSection .menu_tab_list li.active a,
 .menuSection .menu_tab_list li a:hover {
-  background: #e60012;
-  color: #fff;
+    background: #e60012;
+    color: #fff;
 }
 
 /* ==============================
    Menu Tab Contents
 ============================== */
 .menuSection .menu_tab_contents {
-  display: none;
+    display: none;
 }
 
 .menuSection .menu_tab_contents.active {
-  display: block;
+    display: block;
 }
 
 /* ==============================
    Menu Swiper
 ============================== */
 .menuSection .menu_tab_contents .menu_swiper_box {
-  position: relative;
-  padding: 0 58px;
+    position: relative;
+    padding: 0 58px;
 }
 
 .menuSection .menu_tab_contents .menu_swiper {
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .menuSection .menu_tab_contents .menu_swiper .swiper-slide {
-  height: auto;
+    height: auto;
 }
 
 .menuSection .menu_tab_contents .menu_swiper .swiper-slide img {
@@ -128,47 +122,47 @@ section.menuSection {
    Menu Card
 ============================== */
 .menuSection .menu_tab_contents .menuCard {
-  position: relative;
-  display: block;
-  border-radius: 14px;
-  overflow: hidden;
-  background: transparent;
+    position: relative;
+    display: block;
+    border-radius: 14px;
+    overflow: hidden;
+    background: transparent;
 }
 
 .menuSection .menu_tab_contents .menuCard > img:not(.menuBadge) {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  transition: transform 0.35s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.35s ease;
 }
 
 /* 호버 시 전체 이미지 위에 깔리는 오버레이 */
 .menuSection .menu_tab_contents .menuCard::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  background: linear-gradient(to top, #55433ced, rgba(0, 0, 0, 0.2));
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: linear-gradient(to top, #55433ced, rgba(0, 0, 0, 0.2));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
 }
 
 /* 카드 호버 시 이미지 확대 */
 .menuSection .menu_tab_contents .menuCard:hover > img:not(.menuBadge) {
-  transform: scale(1.06);
+    transform: scale(1.06);
 }
 
 /* 카드 호버 시 오버레이 등장 */
 .menuSection .menu_tab_contents .menuCard:hover::after {
-  opacity: 1;
+    opacity: 1;
 }
 
 /* 카드 호버 시 글자 등장 */
 .menuSection .menu_tab_contents .menuCard:hover .menuText {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ==============================
@@ -176,44 +170,43 @@ section.menuSection {
 ============================== */
 /* 기본 상태에서는 글자 숨김 */
 .menuSection .menu_tab_contents .menuText {
-  position: absolute;
-  right: 22px;
-  bottom: 22px;
-  z-index: 2;
-  text-align: right;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(12px);
-  transition:
-    opacity 0.3s ease,
-    transform 0.3s ease;
+    position: absolute;
+    right: 22px;
+    bottom: 22px;
+    z-index: 2;
+    text-align: right;
+    color: #fff;
+    opacity: 0;
+    transform: translateY(12px);
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
 }
 
 .menuSection .menu_tab_contents .menuText h3 {
-  font-size: 28px;
-  font-weight: 900;
-  line-height: 1;
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1;
 }
 
 .menuSection .menu_tab_contents .menuText p {
-  margin-top: 8px;
-  font-size: 13px;
-  line-height: 1.35;
-  font-weight: 500;
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.35;
+    font-weight: 500;
 }
 
 /* ==============================
    Menu Badge Image
 ============================== */
 .menuSection .menu_tab_contents .menuBadge {
-  position: absolute;
-  left: 22px;
-  top: 0;
-  z-index: 4;
-  width: 58px;
-  height: auto;
-  object-fit: contain;
-  pointer-events: none;
+    position: absolute;
+    left: 22px;
+    top: -0.5rem;
+    z-index: 4;
+    height: auto;
+    object-fit: contain;
+    pointer-events: none;
 }
 
 /* ==============================
@@ -222,39 +215,39 @@ section.menuSection {
 /* 좌우 화살표 */
 .menuSection .menu_tab_contents .menu-swiper-button-prev,
 .menuSection .menu_tab_contents .menu-swiper-button-next {
-  position: absolute;
-  top: 50%;
-  z-index: 10;
-  width: 32px;
-  height: 52px;
-  transform: translateY(-50%);
-  cursor: pointer;
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    width: 32px;
+    height: 52px;
+    transform: translateY(-50%);
+    cursor: pointer;
 }
 
 .menuSection .menu_tab_contents .menu-swiper-button-prev {
-  left: 0;
+    left: 0;
 }
 
 .menuSection .menu_tab_contents .menu-swiper-button-next {
-  right: 0;
+    right: 0;
 }
 
 .menuSection .menu_tab_contents .menu-swiper-button-prev::before,
 .menuSection .menu_tab_contents .menu-swiper-button-next::before {
-  content: "";
-  display: block;
-  width: 27px;
-  height: 27px;
-  border-top: 4px solid #b00000;
-  border-left: 4px solid #b00000;
+    content: "";
+    display: block;
+    width: 27px;
+    height: 27px;
+    border-top: 4px solid #b00000;
+    border-left: 4px solid #b00000;
 }
 
 .menuSection .menu_tab_contents .menu-swiper-button-prev::before {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
 
 .menuSection .menu_tab_contents .menu-swiper-button-next::before {
-  transform: rotate(135deg);
+    transform: rotate(135deg);
 }
 
 .menuSection .menu_tab_contents .menu-swiper-button-prev img {
@@ -267,122 +260,122 @@ section.menuSection {
    Menu More Button
 ============================== */
 .menuSection .menuMoreBtnBox {
-  display: flex;
-  justify-content: center;
-  margin-top: 44px;
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
 }
 
 .menuSection .menuMoreBtnBox .menuMoreBtn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 128px;
-  height: 48px;
-  border: 2px solid #5b4a43;
-  border-radius: 999px;
-  color: #4b3932;
-  font-size: 18px;
-  font-weight: 900;
-  background: #fff6ec;
-  transition: 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 128px;
+    height: 48px;
+    border: 2px solid #5b4a43;
+    border-radius: 999px;
+    color: #4b3932;
+    font-size: 18px;
+    font-weight: 900;
+    background: #fff6ec;
+    transition: 0.2s ease;
 }
 
 .menuSection .menuMoreBtnBox .menuMoreBtn:hover {
-  background: #55433c;
-  color: #fff;
+    background: #55433c;
+    color: #fff;
 }
 
 /* ==============================
    Responsive - Tablet
 ============================== */
 @media (max-width: 1024px) {
-  .menuSection .menu_tab_contents .menu_swiper_box {
-    padding: 0 44px;
-  }
+    .menuSection .menu_tab_contents .menu_swiper_box {
+        padding: 0 44px;
+    }
 
-  .menuSection .menu_tab_contents .menuCard {
-    height: 220px;
-  }
+    .menuSection .menu_tab_contents .menuCard {
+        height: 220px;
+    }
 
-  .menuSection .menu_tab_contents .menuText h3 {
-    font-size: 24px;
-  }
+    .menuSection .menu_tab_contents .menuText h3 {
+        font-size: 24px;
+    }
 }
 
 /* ==============================
    Responsive - Mobile
 ============================== */
 @media (max-width: 768px) {
-  .menuSection {
-    padding: 56px 0;
-  }
+    .menuSection {
+        padding: 56px 0;
+    }
 
-  .menuSection .menuSectionTitleBox {
-    display: block;
-    margin-bottom: 30px;
-  }
+    .menuSection .menuSectionTitleBox {
+        display: block;
+        margin-bottom: 30px;
+    }
 
-  .menuSection .menuSectionTitleBox h2 {
-    font-size: 24px;
-    text-align: center;
-  }
+    .menuSection .menuSectionTitleBox h2 {
+        font-size: 24px;
+        text-align: center;
+    }
 
-  .menuSection .menuSectionTitleBox .line {
-    margin-top: 16px;
-  }
+    .menuSection .menuSectionTitleBox .line {
+        margin-top: 16px;
+    }
 
-  .menuSection .menu_tab_list {
-    flex-wrap: wrap;
-    margin-bottom: 30px;
-  }
+    .menuSection .menu_tab_list {
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
 
-  .menuSection .menu_tab_contents .menu_swiper_box {
-    padding: 0 34px;
-  }
+    .menuSection .menu_tab_contents .menu_swiper_box {
+        padding: 0 34px;
+    }
 
-  .menuSection .menu_tab_contents .menuCard {
-    height: 210px;
-  }
+    .menuSection .menu_tab_contents .menuCard {
+        height: 210px;
+    }
 
-  /* 모바일에서는 hover가 불안정하니까 항상 보이게 */
-  .menuSection .menu_tab_contents .menuCard::after {
-    opacity: 1;
-  }
+    /* 모바일에서는 hover가 불안정하니까 항상 보이게 */
+    .menuSection .menu_tab_contents .menuCard::after {
+        opacity: 1;
+    }
 
-  .menuSection .menu_tab_contents .menuText {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    .menuSection .menu_tab_contents .menuText {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ==============================
    Responsive - Small Mobile
 ============================== */
 @media (max-width: 480px) {
-  .menuSection .menu_tab_list li a {
-    width: 76px;
-    height: 34px;
-    font-size: 13px;
-  }
+    .menuSection .menu_tab_list li a {
+        width: 76px;
+        height: 34px;
+        font-size: 13px;
+    }
 
-  .menuSection .menu_tab_contents .menu_swiper_box {
-    padding: 0 30px;
-  }
+    .menuSection .menu_tab_contents .menu_swiper_box {
+        padding: 0 30px;
+    }
 
-  .menuSection .menu_tab_contents .menuCard {
-    height: 200px;
-  }
+    .menuSection .menu_tab_contents .menuCard {
+        height: 200px;
+    }
 
-  .menuSection .menu_tab_contents .menuText {
-    right: 18px;
-    bottom: 18px;
-  }
+    .menuSection .menu_tab_contents .menuText {
+        right: 18px;
+        bottom: 18px;
+    }
 
-  .menuSection .menu_tab_contents .menuText h3 {
-    font-size: 22px;
-  }
+    .menuSection .menu_tab_contents .menuText h3 {
+        font-size: 22px;
+    }
 
-  .menuSection .menu_tab_contents .menuText p {
-    font-size: 12px;
-  }
+    .menuSection .menu_tab_contents .menuText p {
+        font-size: 12px;
+    }
 }

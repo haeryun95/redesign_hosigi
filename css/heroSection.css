@@ -1,8 +1,8 @@
 section.heroSection {
-  padding-top: 2rem;
+    padding-top: 5rem;
 }
 section.heroSection .container {
-  position: relative;
+    position: relative;
 }
 
 section.heroSection .hero_slideBox {
@@ -14,8 +14,8 @@ section.heroSection .hero_slideBox .swiper-slide {
 section.heroSection .hero_slideBox .swiper-slide .img_Box {
 }
 section.heroSection .hero_slideBox .swiper-slide .img_Box img {
-  border-radius: 2rem;
-  width: 100%;
+    border-radius: 2rem;
+    width: 100%;
 }
 
 /* =====================
@@ -23,42 +23,42 @@ section.heroSection .hero_slideBox .swiper-slide .img_Box img {
 ========================*/
 
 section.heroSection .cta_buttons {
-  gap: 2rem;
-  left: 50%;
-  width: 100%;
-  z-index: 115;
-  top: 90%;
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  transform: translateX(-50%);
+    gap: 5rem;
+    left: 50%;
+    width: 100%;
+    z-index: 115;
+    top: 90%;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    transform: translateX(-50%);
 }
 section.heroSection .cta_button {
-  padding: 2rem 1rem;
-  box-shadow: var(--shadow-03);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 3px solid transparent;
-  border-radius: 2rem;
-  padding: 3rem 6rem;
-  background: var(--main-bg);
-  cursor: pointer;
+    padding: 2rem 1rem;
+    box-shadow: var(--shadow-03);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid transparent;
+    border-radius: 2rem;
+    padding: 2rem 6rem;
+    background: var(--main-bg);
+    cursor: pointer;
 }
 
 section.heroSection .cta_buttons .cta_button .cta_icon {
 }
 section.heroSection .cta_buttons .cta_button .cta_icon img {
-  width: 4rem;
+    width: 4rem;
 }
 section.heroSection .cta_buttons .cta_button h2 {
-  font-size: 2.4rem;
-  padding-top: 1rem;
+    font-size: 2rem;
+    padding-top: 1rem;
 }
 section.heroSection .cta_buttons .cta_button p {
-  font-size: 1.6rem;
-  padding-top: 0.2rem;
+    font-size: 1.6rem;
+    padding-top: 0.2rem;
 }
 
 /* =====================
@@ -66,8 +66,8 @@ CTA : Hover
 ========================*/
 
 section.heroSection .cta_button:hover {
-  border: 3px solid var(--main-primary);
+    border: 3px solid var(--main-primary);
 }
 section.heroSection .cta_button:hover h2 {
-  color: var(--main-primary);
+    color: var(--main-primary);
 }

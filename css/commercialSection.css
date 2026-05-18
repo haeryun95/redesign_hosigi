@@ -1,5 +1,4 @@
 section.commercialSection {
-    margin-top: 14rem;
 }
 
 section.commercialSection .container {
@@ -10,7 +9,7 @@ section.commercialSection .commercialTopBox {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 0;
+    margin-bottom: 6rem;
 }
 section.commercialSection .commercialTopBox h2 {
     font-size: 2.8rem;
@@ -24,7 +23,6 @@ section.commercialSection .commercialTopBox a {
 /* bottom box */
 
 section.commercialSection .commercialBottomBox {
-    padding-bottom: 9rem;
 }
 section.commercialSection .commercialBottomBox ul {
     width: 100%;
