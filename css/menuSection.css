@@ -8,8 +8,6 @@ section.menuSection {
 }
 
 .menuSection .container {
-    width: 1400px;
-    margin: 0 auto;
     position: relative;
 }
 
@@ -20,14 +18,14 @@ section.menuSection {
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 2.4rem;
     margin-bottom: 6rem;
 }
 
 .menuSection .menuSectionTitleBox h2 {
     width: 30%;
     flex-shrink: 0;
-    font-size: 28px;
+    font-size: 2.8rem;
     font-weight: 800;
     color: #4d3931;
 }
@@ -51,7 +49,7 @@ section.menuSection {
     gap: 10px;
     display: flex;
     justify-content: center;
-    margin-bottom: 42px;
+    margin-bottom: 4.2rem;
 }
 
 .menuSection .menu_tab_list li {
@@ -61,13 +59,13 @@ section.menuSection {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 88px;
-    height: 36px;
+    width: 8.8rem;
+    height: 3.6rem;
     color: #e60012;
-    border-radius: 999px;
+    border-radius: 5rem;
     padding: 1rem 2rem;
     border: 2px solid #e60012;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-weight: 800;
     background: #fff6ec;
     transition: 0.2s ease;
