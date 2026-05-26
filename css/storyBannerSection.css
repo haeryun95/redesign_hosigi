@@ -432,3 +432,99 @@ section.storySection {
         border-radius: 1rem;
     }
 }
+
+/* ==============================
+   Story Section Responsive Fix
+   태블릿 잘림 수정
+============================== */
+
+/* 1024px 이하부터 1열 전환 */
+@media screen and (max-width: 1024px) {
+    .storySection {
+        padding: 7rem 0;
+    }
+
+    .storySection .container {
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+
+    .storySection .storySectionTitleBox {
+        display: block;
+        margin-bottom: 3.6rem;
+        text-align: center;
+    }
+
+    .storySection .storySectionTitleBox h2 {
+        width: 100%;
+        min-width: 0;
+        font-size: 2.4rem;
+        line-height: 1.35;
+        word-break: keep-all;
+    }
+
+    .storySection .storySectionTitleBox .line {
+        width: 100%;
+        margin-top: 1.6rem;
+    }
+
+    .storySection .storyGrid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.8rem;
+        overflow: visible;
+    }
+
+    .storySection .storyGrid .storyLeft,
+    .storySection .storyGrid .storyRight {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    .storySection .storyGrid .bottomBanner {
+        grid-column: 1 / 2;
+        grid-row: auto;
+        width: 100%;
+    }
+
+    .storySection .storyGrid .storyBanner {
+        width: 100%;
+        height: auto;
+        border-radius: 1.4rem;
+    }
+
+    .storySection .storyGrid .storyBanner img {
+        display: block;
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .storySection .storyGrid .topBanner,
+    .storySection .storyGrid .topBanner.swiper,
+    .storySection .storyGrid .bottomBanner,
+    .storySection .storyGrid .bottomBanner.swiper {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .storySection .storyGrid .topBanner .swiper-slide,
+    .storySection .storyGrid .bottomBanner .swiper-slide {
+        width: 100%;
+    }
+
+    .storySection .storyGrid .topBanner .swiper-slide a,
+    .storySection .storyGrid .bottomBanner .swiper-slide a {
+        display: block;
+        width: 100%;
+    }
+}

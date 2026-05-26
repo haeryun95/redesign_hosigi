@@ -346,7 +346,7 @@ section.menuSection {
 @media (max-width: 480px) {
     .menuSection .menu_tab_list li a {
         width: 7.6rem;
-        height: 3.4rem;
+        height: 3.8rem;
         font-size: 1.3rem;
     }
 
@@ -406,7 +406,7 @@ section.menuSection {
     }
 
     .menuSection .menu_tab_contents .menuCard {
-        height: 26rem;
+        height: 38rem;
         border-radius: 1.4rem;
     }
 
@@ -457,7 +457,7 @@ section.menuSection {
 
     .menuSection .menu_tab_list li a {
         width: 8.2rem;
-        height: 3.4rem;
+        height: 3.8rem;
         padding: 0.8rem 1.6rem;
         font-size: 1.35rem;
     }
@@ -467,7 +467,7 @@ section.menuSection {
     }
 
     .menuSection .menu_tab_contents .menuCard {
-        height: 23rem;
+        height: 38rem;
     }
 
     .menuSection .menu_tab_contents .menuText h3 {
