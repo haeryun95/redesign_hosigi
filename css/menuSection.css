@@ -1,9 +1,8 @@
 /* ==============================
    Menu Section
 ============================== */
-section.menuSection {
-}
 
+section.menuSection,
 .menuSection {
 }
 
@@ -14,6 +13,7 @@ section.menuSection {
 /* ==============================
    Menu Section Title
 ============================== */
+
 .menuSection .menuSectionTitleBox {
     width: 100%;
     display: flex;
@@ -27,6 +27,7 @@ section.menuSection {
     flex-shrink: 0;
     font-size: 2.8rem;
     font-weight: 800;
+    line-height: 1.35;
     color: var(--gray-variant-02);
 }
 
@@ -45,47 +46,52 @@ section.menuSection {
 /* ==============================
    Menu Tabs
 ============================== */
+
 .menuSection .menu_tab_list {
-    gap: 10px;
     display: flex;
     justify-content: center;
+    gap: 1rem;
     margin-bottom: 4.2rem;
 }
 
 .menuSection .menu_tab_list li {
+    flex-shrink: 0;
 }
 
 .menuSection .menu_tab_list li a {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 8.8rem;
     height: 3.6rem;
-    color: var(--red-variant-04);
-    border-radius: 5rem;
     padding: 1rem 2rem;
-    border: 2px solid var(--red-variant-04);
+
+    color: var(--red-variant-04);
+    border: 0.2rem solid var(--red-variant-04);
+    border-radius: 5rem;
+
     font-size: 1.4rem;
     font-weight: 800;
+    line-height: 1;
+    white-space: nowrap;
+
     background: var(--white);
     transition: 0.2s ease;
 }
 
-.menuSection .menu_tab_list li a.active {
-    color: var(--white);
-    background: var(--red-variant-03);
-    border: 0.3rem solid var(--red-variant-03);
-}
-
+.menuSection .menu_tab_list li a.active,
 .menuSection .menu_tab_list li.active a,
 .menuSection .menu_tab_list li a:hover {
-    background: var(--red-variant-04);
     color: var(--white);
+    background: var(--red-variant-04);
+    border-color: var(--red-variant-04);
 }
 
 /* ==============================
    Menu Tab Contents
 ============================== */
+
 .menuSection .menu_tab_contents {
     display: none;
 }
@@ -97,41 +103,50 @@ section.menuSection {
 /* ==============================
    Menu Swiper
 ============================== */
+
 .menuSection .menu_tab_contents .menu_swiper_box {
     position: relative;
+    width: 100%;
+    max-width: 100%;
     padding: 0 5.8rem;
+    box-sizing: border-box;
 }
 
 .menuSection .menu_tab_contents .menu_swiper {
+    width: 100%;
+    max-width: 100%;
     overflow: hidden;
+}
+
+.menuSection .menu_tab_contents .menu_swiper .swiper-wrapper {
+    max-width: 100%;
 }
 
 .menuSection .menu_tab_contents .menu_swiper .swiper-slide {
     height: auto;
-}
-
-.menuSection .menu_tab_contents .menu_swiper .swiper-slide img {
-}
-
-.menuSection .menu_tab_contents .menu-swiper-pagination {
+    min-width: 0;
 }
 
 /* ==============================
    Menu Card
 ============================== */
+
 .menuSection .menu_tab_contents .menuCard {
     position: relative;
     display: block;
-    border-radius: 14px;
+    width: 100%;
+    height: 34rem;
+
+    border-radius: 1.4rem;
     overflow: hidden;
     background: transparent;
 }
 
 .menuSection .menu_tab_contents .menuCard > img:not(.menuBadge) {
+    display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
     transition: transform 0.35s ease;
 }
 
@@ -140,6 +155,7 @@ section.menuSection {
     position: absolute;
     inset: 0;
     z-index: 1;
+
     background: linear-gradient(to top, var(--gray-variant-03), rgba(0, 0, 0, 0.2));
     opacity: 0;
     transition: opacity 0.3s ease;
@@ -162,13 +178,16 @@ section.menuSection {
 /* ==============================
    Menu Card Text
 ============================== */
+
 .menuSection .menu_tab_contents .menuText {
     position: absolute;
     right: 2.2rem;
     bottom: 2.2rem;
     z-index: 2;
+
     text-align: right;
     color: var(--white);
+
     opacity: 0;
     transform: translateY(12px);
     transition:
@@ -192,11 +211,14 @@ section.menuSection {
 /* ==============================
    Menu Badge Image
 ============================== */
+
 .menuSection .menu_tab_contents .menuBadge {
     position: absolute;
     left: 2.2rem;
     top: 0;
     z-index: 4;
+
+    max-width: 7.4rem;
     height: auto;
     object-fit: contain;
     pointer-events: none;
@@ -205,13 +227,16 @@ section.menuSection {
 /* ==============================
    Menu Swiper Navigation
 ============================== */
+
 .menuSection .menu_tab_contents .menu-swiper-button-prev,
 .menuSection .menu_tab_contents .menu-swiper-button-next {
     position: absolute;
     top: 50%;
     z-index: 10;
+
     width: 3.2rem;
     height: 5.2rem;
+
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -228,8 +253,10 @@ section.menuSection {
 .menuSection .menu_tab_contents .menu-swiper-button-next::before {
     content: "";
     display: block;
+
     width: 2.7rem;
     height: 2.7rem;
+
     border-top: 0.4rem solid var(--red-variant-03);
     border-left: 0.4rem solid var(--red-variant-03);
 }
@@ -242,15 +269,10 @@ section.menuSection {
     transform: rotate(135deg);
 }
 
-.menuSection .menu_tab_contents .menu-swiper-button-prev img {
-}
-
-.menuSection .menu_tab_contents .menu-swiper-button-next img {
-}
-
 /* ==============================
    Menu More Button
 ============================== */
+
 .menuSection .menuMoreBtnBox {
     display: flex;
     justify-content: center;
@@ -261,13 +283,17 @@ section.menuSection {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 128px;
-    height: 48px;
-    border: 2px solid var(--gray-variant-02);
+
+    width: 12.8rem;
+    height: 4.8rem;
+
+    border: 0.2rem solid var(--gray-variant-02);
     border-radius: 5rem;
+
     color: var(--gray-variant-02);
     font-size: 1.8rem;
     font-weight: 900;
+
     transition: 0.2s ease;
 }
 
@@ -277,109 +303,10 @@ section.menuSection {
 }
 
 /* ==============================
-   Responsive - Tablet
-============================== */
-@media (max-width: 1024px) {
-    .menuSection .menu_tab_contents .menu_swiper_box {
-        padding: 0 4.4rem;
-    }
-
-    .menuSection .menu_tab_contents .menuCard {
-        position: relative;
-        height: 22rem;
-    }
-
-    .menuSection .menu_tab_contents .menuText h3 {
-        font-size: 2.4rem;
-    }
-}
-
-/* ==============================
-   Responsive - Mobile
-============================== */
-@media (max-width: 768px) {
-    .menuSection {
-        padding: 5.6rem 0;
-    }
-
-    .menuSection .menuSectionTitleBox {
-        display: block;
-        margin-bottom: 3rem;
-    }
-
-    .menuSection .menuSectionTitleBox h2 {
-        font-size: 2.4rem;
-        text-align: center;
-    }
-
-    .menuSection .menuSectionTitleBox .line {
-        margin-top: 1.6rem;
-    }
-
-    .menuSection .menu_tab_list {
-        flex-wrap: wrap;
-        margin-bottom: 3rem;
-    }
-
-    .menuSection .menu_tab_contents .menu_swiper_box {
-        padding: 0 3.4rem;
-    }
-
-    .menuSection .menu_tab_contents .menuCard {
-        height: 21rem;
-    }
-
-    /* 모바일에서는 hover가 불안정하니까 항상 보이게 */
-    .menuSection .menu_tab_contents .menuCard::after {
-        opacity: 1;
-    }
-
-    .menuSection .menu_tab_contents .menuText {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ==============================
-   Responsive - Small Mobile
-============================== */
-@media (max-width: 480px) {
-    .menuSection .menu_tab_list li a {
-        width: 7.6rem;
-        height: 3.8rem;
-        font-size: 1.3rem;
-    }
-
-    .menuSection .menu_tab_contents .menu_swiper_box {
-        padding: 0 3rem;
-    }
-
-    .menuSection .menu_tab_contents .menuCard {
-        height: 20rem;
-    }
-
-    .menuSection .menu_tab_contents .menuText {
-        right: 1.8rem;
-        bottom: 1.8rem;
-    }
-
-    .menuSection .menu_tab_contents .menuText h3 {
-        font-size: 2.2rem;
-    }
-
-    .menuSection .menu_tab_contents .menuText p {
-        font-size: 1.2rem;
-    }
-}
-
-/* ==============================
-   Menu Section Responsive
-   Tablet / Mobile
+   Responsive - 1200px
+   작은 PC / 태블릿 가로
 ============================== */
 
-/* ==============================
-   1200px 이하 - 작은 PC / 태블릿 가로
-============================== */
 @media screen and (max-width: 1200px) {
     .menuSection .container {
         padding: 0 2rem;
@@ -406,8 +333,7 @@ section.menuSection {
     }
 
     .menuSection .menu_tab_contents .menuCard {
-        height: 38rem;
-        border-radius: 1.4rem;
+        height: 30rem;
     }
 
     .menuSection .menu_tab_contents .menuText {
@@ -434,8 +360,10 @@ section.menuSection {
 }
 
 /* ==============================
-   1024px 이하 - 태블릿
+   Responsive - 1024px
+   태블릿
 ============================== */
+
 @media screen and (max-width: 1024px) {
     .menuSection {
         padding: 7rem 0;
@@ -467,7 +395,7 @@ section.menuSection {
     }
 
     .menuSection .menu_tab_contents .menuCard {
-        height: 38rem;
+        height: 26rem;
     }
 
     .menuSection .menu_tab_contents .menuText h3 {
@@ -501,16 +429,22 @@ section.menuSection {
 }
 
 /* ==============================
-   768px 이하 - 모바일
+   Responsive - 768px
+   모바일
 ============================== */
+
 @media screen and (max-width: 768px) {
     .menuSection {
         padding: 5.6rem 0;
+        overflow: hidden;
     }
 
     .menuSection .container {
+        width: 100%;
+        max-width: 100%;
         padding: 0 1.6rem;
         box-sizing: border-box;
+        overflow: hidden;
     }
 
     /* 제목 */
@@ -539,6 +473,9 @@ section.menuSection {
         flex-wrap: nowrap;
         gap: 0.8rem;
 
+        width: 100%;
+        max-width: 100%;
+
         margin-bottom: 2.8rem;
         padding-bottom: 0.4rem;
 
@@ -561,6 +498,7 @@ section.menuSection {
         min-width: 7.6rem;
         height: 3.4rem;
         padding: 0 1.6rem;
+
         font-size: 1.3rem;
         white-space: nowrap;
         border-width: 0.2rem;
@@ -571,17 +509,34 @@ section.menuSection {
         border-width: 0.2rem;
     }
 
-    /* 스와이퍼 박스 */
+    /* 스와이퍼 */
+    .menuSection .menu_tab_contents {
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
     .menuSection .menu_tab_contents .menu_swiper_box {
+        width: 100%;
+        max-width: 100%;
         padding: 0;
+        overflow: hidden;
     }
 
     .menuSection .menu_tab_contents .menu_swiper {
+        width: 100%;
+        max-width: 100%;
         overflow: hidden;
+    }
+
+    .menuSection .menu_tab_contents .menu_swiper .swiper-wrapper {
+        max-width: 100%;
     }
 
     .menuSection .menu_tab_contents .menu_swiper .swiper-slide {
         height: auto;
+        max-width: 100%;
+        min-width: 0;
     }
 
     .menuSection .menu_tab_contents .menuCard {
@@ -650,8 +605,10 @@ section.menuSection {
 }
 
 /* ==============================
-   480px 이하 - 작은 모바일
+   Responsive - 480px
+   작은 모바일
 ============================== */
+
 @media screen and (max-width: 480px) {
     .menuSection {
         padding: 4.8rem 0;
@@ -674,8 +631,8 @@ section.menuSection {
     }
 
     .menuSection .menu_tab_list {
-        margin-bottom: 2.4rem;
         gap: 0.7rem;
+        margin-bottom: 2.4rem;
     }
 
     .menuSection .menu_tab_list li a {
@@ -721,8 +678,10 @@ section.menuSection {
 }
 
 /* ==============================
-   360px 이하 - 아주 작은 모바일
+   Responsive - 360px
+   아주 작은 모바일
 ============================== */
+
 @media screen and (max-width: 360px) {
     .menuSection .container {
         padding: 0 1.2rem;

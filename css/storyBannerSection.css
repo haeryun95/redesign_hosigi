@@ -440,91 +440,74 @@ section.storySection {
 
 /* 1024px 이하부터 1열 전환 */
 @media screen and (max-width: 1024px) {
-    .storySection {
-        padding: 7rem 0;
-    }
-
     .storySection .container {
-        padding: 0 2rem;
+        width: 100%;
+        max-width: 100%;
+        padding-left: 2rem;
+        padding-right: 2rem;
         box-sizing: border-box;
-    }
-
-    .storySection .storySectionTitleBox {
-        display: block;
-        margin-bottom: 3.6rem;
-        text-align: center;
-    }
-
-    .storySection .storySectionTitleBox h2 {
-        width: 100%;
-        min-width: 0;
-        font-size: 2.4rem;
-        line-height: 1.35;
-        word-break: keep-all;
-    }
-
-    .storySection .storySectionTitleBox .line {
-        width: 100%;
-        margin-top: 1.6rem;
+        overflow: hidden;
     }
 
     .storySection .storyGrid {
         width: 100%;
+        max-width: 100%;
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
         grid-template-rows: auto;
-        gap: 1.8rem;
-        overflow: visible;
+        gap: 1.6rem;
+        margin: 0;
+        overflow: hidden;
     }
 
     .storySection .storyGrid .storyLeft,
-    .storySection .storyGrid .storyRight {
-        grid-column: 1 / 2;
-        grid-row: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1.8rem;
-    }
-
+    .storySection .storyGrid .storyRight,
     .storySection .storyGrid .bottomBanner {
         grid-column: 1 / 2;
         grid-row: auto;
         width: 100%;
-    }
-
-    .storySection .storyGrid .storyBanner {
-        width: 100%;
-        height: auto;
-        border-radius: 1.4rem;
-    }
-
-    .storySection .storyGrid .storyBanner img {
-        display: block;
-        width: 100%;
-        height: auto;
         max-width: 100%;
-        object-fit: contain;
+        min-width: 0;
     }
 
+    .storySection .storyGrid .storyBanner,
     .storySection .storyGrid .topBanner,
-    .storySection .storyGrid .topBanner.swiper,
-    .storySection .storyGrid .bottomBanner,
-    .storySection .storyGrid .bottomBanner.swiper {
+    .storySection .storyGrid .bottomBanner {
         width: 100%;
         max-width: 100%;
         min-width: 0;
+        height: auto;
         overflow: hidden;
     }
 
-    .storySection .storyGrid .topBanner .swiper-slide,
-    .storySection .storyGrid .bottomBanner .swiper-slide {
-        width: 100%;
-    }
-
-    .storySection .storyGrid .topBanner .swiper-slide a,
-    .storySection .storyGrid .bottomBanner .swiper-slide a {
+    .storySection .storyGrid .storyBanner img,
+    .storySection .storyGrid .topBanner img,
+    .storySection .storyGrid .bottomBanner img {
         display: block;
         width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
+
+    .storySection .storyGrid .swiper,
+    .storySection .storyGrid .swiper-wrapper,
+    .storySection .storyGrid .swiper-slide {
+        max-width: 100%;
+        min-width: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .storySection .container {
+        padding-left: 1.6rem;
+        padding-right: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .storySection .container {
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
     }
 }
