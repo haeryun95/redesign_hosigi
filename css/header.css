@@ -113,8 +113,8 @@ PC 버전
     top: 100%;
     width: 100%;
     background: url("../image/header_background_logo_red.png") no-repeat var(--main-bg);
-    background-size: 20%;
-    background-position: bottom right;
+    background-size: 15%;
+    background-position: 137rem 80%;
     border-top: 0.1rem solid var(--main-primary);
     box-shadow: var(--shadow-03);
     height: 26rem;
@@ -127,14 +127,283 @@ PC 버전
 }
 
 /* ===============================
+모바일 헤더 기본 숨김
+=================================*/
+
+.header .mb_header {
+    display: none;
+}
+
+/* ===============================
 MB 버전
 =================================*/
+
 .header .mb_nav {
     display: none;
 }
-.header .mb_nav .nav_list {
+
+/* ===============================
+반응형
+=================================*/
+
+@media screen and (max-width: 1024px) {
+    .header {
+        height: 7rem;
+    }
+
+    /* PC 메뉴 숨김 */
+    .header .pc_nav {
+        display: none;
+    }
+
+    /* 모바일 상단바 */
+    .header .mb_header {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        padding: 0 2rem;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header .mb_header .logo img {
+        width: 8.8rem;
+        display: block;
+    }
+
+    /* 햄버거 버튼 */
+    .header .mb_menu_btn {
+        width: 4.2rem;
+        height: 4.2rem;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0;
+    }
+
+    .header .mb_menu_btn span {
+        display: block;
+        width: 2.8rem;
+        height: 0.3rem;
+        background: var(--main-primary);
+        border-radius: 99rem;
+        transition: all 0.3s ease;
+    }
+
+    /* 모바일 메뉴 */
+    .header .mb_nav {
+        display: block;
+        position: fixed;
+        z-index: 1001;
+        top: 0;
+        right: -100%;
+        width: 82%;
+        max-width: 36rem;
+        height: 100vh;
+        background: var(--main-bg);
+        box-shadow: -0.4rem 0 2rem rgba(0, 0, 0, 0.15);
+        transition: right 0.35s ease;
+        overflow-y: auto;
+    }
+
+    .header .mb_nav.active {
+        right: 0;
+    }
+
+    /* 모바일 메뉴 상단 */
+    .header .mb_nav_top {
+        height: 7rem;
+        padding: 0 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08);
+    }
+
+    .header .mb_nav_top strong {
+        font-size: 2rem;
+        font-weight: 700;
+        color: var(--main-primary);
+    }
+
+    /* 닫기 버튼 */
+    .header .mb_close_btn {
+        width: 4rem;
+        height: 4rem;
+        position: relative;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .header .mb_close_btn span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 2.6rem;
+        height: 0.25rem;
+        background: var(--main-primary);
+        border-radius: 99rem;
+    }
+
+    .header .mb_close_btn span:first-child {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .header .mb_close_btn span:last-child {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    /* 모바일 1depth */
+    .header .mb_nav .nav_list {
+        width: 100%;
+    }
+
+    .header .mb_nav .nav_list > li {
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.08);
+    }
+
+    .header .mb_nav .nav_list > li > a {
+        position: relative;
+        display: block;
+        width: 100%;
+        padding: 1.8rem 2rem;
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: var(--text-color, #222);
+    }
+
+    /* 오른쪽 + 아이콘 */
+    .header .mb_nav .nav_list > li > a::before,
+    .header .mb_nav .nav_list > li > a::after {
+        content: "";
+        position: absolute;
+        right: 2rem;
+        top: 50%;
+        width: 1.4rem;
+        height: 0.2rem;
+        background: var(--main-primary);
+        transition: all 0.3s ease;
+    }
+
+    .header .mb_nav .nav_list > li > a::before {
+        transform: translateY(-50%);
+    }
+
+    .header .mb_nav .nav_list > li > a::after {
+        transform: translateY(-50%) rotate(90deg);
+    }
+
+    .header .mb_nav .nav_list > li.active > a::after {
+        transform: translateY(-50%) rotate(0deg);
+        opacity: 0;
+    }
+
+    .header .mb_nav .nav_list > li.active > a {
+        color: var(--main-primary);
+    }
+
+    /* 모바일 2depth */
+    .header .mb_nav .nav_list_subMenu {
+        display: none;
+        padding: 0.8rem 0 1.4rem;
+        background: rgba(0, 0, 0, 0.03);
+    }
+
+    .header .mb_nav .nav_list > li.active .nav_list_subMenu {
+    }
+
+    .header .mb_nav .nav_list_subMenu li a {
+        display: block;
+        padding: 1rem 2.4rem;
+        font-size: 1.5rem;
+        color: #555;
+    }
+
+    .header .mb_nav .nav_list_subMenu li a:hover {
+        color: var(--main-primary);
+    }
+
+    /* 모바일 하단 버튼 */
+    .header .mb_nav_btnBox {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 2rem;
+    }
+
+    .header .mb_nav_btnBox a {
+        height: 4.6rem;
+        line-height: 4.6rem;
+        border-radius: 99rem;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: var(--main-bg);
+        background: var(--main-primary);
+    }
+
+    .header .mb_nav_btnBox a:last-child {
+        color: var(--main-primary);
+        background: var(--main-bg);
+        border: 0.1rem solid var(--main-primary);
+    }
+
+    /* dim */
+    .header .dim {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.45);
+    }
+
+    .header .dim.active {
+        display: block;
+    }
+
+    body.scroll_lock {
+        overflow: hidden;
+    }
 }
-.header .mb_nav .nav_list > li {
-}
-.header .mb_nav .nav_list > li > a {
+
+@media screen and (max-width: 480px) {
+    .header {
+        height: 6.4rem;
+    }
+
+    .header .mb_header {
+        padding: 0 1.6rem;
+    }
+
+    .header .mb_header .logo img {
+        width: 8rem;
+    }
+
+    .header .mb_nav {
+        width: 86%;
+    }
+
+    .header .mb_nav_top {
+        height: 6.4rem;
+        padding: 0 1.6rem;
+    }
+
+    .header .mb_nav .nav_list > li > a {
+        padding: 1.6rem 1.8rem;
+        font-size: 1.7rem;
+    }
+
+    .header .mb_nav .nav_list_subMenu li a {
+        padding: 0.9rem 2.2rem;
+        font-size: 1.45rem;
+    }
 }
