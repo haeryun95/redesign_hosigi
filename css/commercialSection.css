@@ -1,55 +1,297 @@
+/* ===============================
+Commercial Section
+=================================*/
+
 section.commercialSection {
 }
 
 section.commercialSection .container {
 }
 
-/* topBox */
+/* ===============================
+Top Box
+=================================*/
+
 section.commercialSection .commercialTopBox {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 3rem;
 }
+
 section.commercialSection .commercialTopBox h2 {
     font-size: 2.8rem;
+    font-weight: 800;
     color: var(--main-secondary);
 }
+
 section.commercialSection .commercialTopBox a {
     font-size: 2rem;
+    font-weight: 700;
     color: var(--main-primary);
 }
 
-/* bottom box */
+/* ===============================
+Bottom Box
+=================================*/
 
 section.commercialSection .commercialBottomBox {
+    width: 100%;
 }
-section.commercialSection .commercialBottomBox ul {
+
+section.commercialSection .commercialBottomBox .videoBox {
+    width: 100%;
+}
+
+section.commercialSection .commercialBottomBox .list {
     width: 100%;
     display: flex;
     gap: 2rem;
     justify-content: space-between;
 }
-section.commercialSection .commercialBottomBox ul li {
+
+section.commercialSection .commercialBottomBox .list li {
+    flex: 1;
+    min-width: 0;
 }
-section.commercialSection .commercialBottomBox ul li a {
+
+section.commercialSection .commercialBottomBox .list li a {
     position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
 }
-section.commercialSection .commercialBottomBox ul li a img {
-    width: 45rem;
-    aspect-ratio: 16/9;
+
+section.commercialSection .commercialBottomBox .list li a img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
     border-radius: 2rem;
 }
 
 /* 가상요소 - 플레이 아이콘 */
 
-section.commercialSection .commercialBottomBox ul li a::before {
+section.commercialSection .commercialBottomBox .list li a::before {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
+
     position: absolute;
+    left: 0;
+    top: 0;
     z-index: 100;
-    background: url(../image/icon_youtube_play.png) no-repeat;
-    background-position: center;
+
+    background: url("../image/icon_youtube_play.png") no-repeat center;
+    background-size: 6.4rem auto;
+
+    pointer-events: none;
+}
+
+/* 살짝 어두운 오버레이 */
+section.commercialSection .commercialBottomBox .list li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 90;
+
+    background: rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+
+    pointer-events: none;
+}
+
+section.commercialSection .commercialBottomBox .list li a:hover::after {
+    opacity: 1;
+}
+
+section.commercialSection .commercialBottomBox .list li a:hover img {
+    transform: scale(1.04);
+}
+
+section.commercialSection .commercialBottomBox .list li a img {
+    transition: transform 0.3s ease;
+}
+
+/* ===============================
+Responsive : 1200px
+작은 PC / 태블릿 가로
+=================================*/
+
+@media screen and (max-width: 1200px) {
+    section.commercialSection .container {
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+
+    section.commercialSection .commercialTopBox {
+        margin-bottom: 2.6rem;
+    }
+
+    section.commercialSection .commercialTopBox h2 {
+        font-size: 2.6rem;
+    }
+
+    section.commercialSection .commercialTopBox a {
+        font-size: 1.8rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list {
+        gap: 1.6rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a,
+    section.commercialSection .commercialBottomBox .list li a img {
+        border-radius: 1.8rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a::before {
+        background-size: 5.8rem auto;
+    }
+}
+
+/* ===============================
+Responsive : 1024px
+태블릿
+=================================*/
+
+@media screen and (max-width: 1024px) {
+    section.commercialSection .commercialTopBox {
+        margin-bottom: 2.4rem;
+    }
+
+    section.commercialSection .commercialTopBox h2 {
+        font-size: 2.4rem;
+    }
+
+    section.commercialSection .commercialTopBox a {
+        font-size: 1.7rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list {
+        gap: 1.4rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a,
+    section.commercialSection .commercialBottomBox .list li a img {
+        border-radius: 1.6rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a::before {
+        background-size: 5.2rem auto;
+    }
+}
+
+/* ===============================
+Responsive : 768px
+모바일
+=================================*/
+
+@media screen and (max-width: 768px) {
+    section.commercialSection .container {
+        padding: 0 1.6rem;
+        box-sizing: border-box;
+    }
+
+    section.commercialSection .commercialTopBox {
+        margin-bottom: 1.8rem;
+    }
+
+    section.commercialSection .commercialTopBox h2 {
+        font-size: 2.2rem;
+    }
+
+    section.commercialSection .commercialTopBox a {
+        font-size: 1.5rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list {
+        flex-direction: column;
+        gap: 1.4rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li {
+        width: 100%;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a,
+    section.commercialSection .commercialBottomBox .list li a img {
+        border-radius: 1.4rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a::before {
+        background-size: 5rem auto;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a:hover img {
+        transform: none;
+    }
+}
+
+/* ===============================
+Responsive : 480px
+작은 모바일
+=================================*/
+
+@media screen and (max-width: 480px) {
+    section.commercialSection .container {
+        padding: 0 1.4rem;
+    }
+
+    section.commercialSection .commercialTopBox {
+        margin-bottom: 1.4rem;
+    }
+
+    section.commercialSection .commercialTopBox h2 {
+        font-size: 2rem;
+    }
+
+    section.commercialSection .commercialTopBox a {
+        font-size: 1.4rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list {
+        gap: 1.2rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a,
+    section.commercialSection .commercialBottomBox .list li a img {
+        border-radius: 1.2rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a::before {
+        background-size: 4.4rem auto;
+    }
+}
+
+/* ===============================
+Responsive : 360px
+아주 작은 모바일
+=================================*/
+
+@media screen and (max-width: 360px) {
+    section.commercialSection .container {
+        padding: 0 1.2rem;
+    }
+
+    section.commercialSection .commercialTopBox h2 {
+        font-size: 1.85rem;
+    }
+
+    section.commercialSection .commercialTopBox a {
+        font-size: 1.3rem;
+    }
+
+    section.commercialSection .commercialBottomBox .list li a::before {
+        background-size: 4rem auto;
+    }
 }

@@ -46,20 +46,24 @@ const initMenuSwipers = () => {
 
             breakpoints: {
                 0: {
-                    slidesPerView: 1,
-                    spaceBetween: 12,
+                    slidesPerView: 1.15,
+                    spaceBetween: 14,
                 },
-                576: {
-                    slidesPerView: 2,
-                    spaceBetween: 12,
+                480: {
+                    slidesPerView: 1.35,
+                    spaceBetween: 16,
                 },
-                900: {
+                768: {
+                    slidesPerView: 2.3,
+                    spaceBetween: 18,
+                },
+                1024: {
                     slidesPerView: 3,
-                    spaceBetween: 12,
+                    spaceBetween: 20,
                 },
                 1200: {
                     slidesPerView: 4,
-                    spaceBetween: 12,
+                    spaceBetween: 24,
                 },
             },
         });
