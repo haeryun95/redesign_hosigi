@@ -1,185 +1,223 @@
 /* ==============================
    Footer
 ============================== */
-footer.footer {
-}
-
 .footer {
-  background: #55433c;
-  padding: 4rem 0;
+    background: var(--gray-variant-03);
+    padding: 4.8rem 0 4.4rem;
 }
 
 .footer .container {
-  width: 1200px;
-  max-width: 92%;
-  margin: 0 auto;
 }
 
 /* ==============================
    Footer Inner
 ============================== */
 .footer .footerInner {
-  position: relative;
-  min-height: 18rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    width: 100%;
 }
 
 /* ==============================
    Footer Link
 ============================== */
 .footer .footerLinkList {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1.4rem;
-  margin-bottom: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    margin-bottom: 4.4rem;
 }
 
 .footer .footerLinkList li {
-  position: relative;
+    position: relative;
 }
 
 .footer .footerLinkList li:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: -0.8rem;
-  top: 50%;
-  width: 1px;
-  height: 1.1rem;
-  background: rgba(255, 255, 255, 0.65);
-  transform: translateY(-50%);
+    content: "";
+    position: absolute;
+    right: -0.9rem;
+    top: 50%;
+    width: 1px;
+    height: 1.2rem;
+    background: rgba(255, 255, 255, 0.55);
+    transform: translateY(-50%);
 }
 
 .footer .footerLinkList li a {
-  color: #fff;
-  font-size: 1.4rem;
-  font-weight: 500;
-  text-decoration: underline;
-  text-underline-offset: 0.4rem;
+    display: block;
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-decoration: underline;
+    text-underline-offset: 0.4rem;
+    text-decoration-thickness: 1px;
 }
 
 /* ==============================
    Footer Content
 ============================== */
 .footer .footerContent {
-  display: grid;
-  grid-template-columns: 18rem 1fr 12rem;
-  align-items: end;
-  gap: 4rem;
+    display: grid;
+    grid-template-columns: 15rem minmax(0, 1fr) 12rem;
+    align-items: end;
+    column-gap: 5.6rem;
 }
 
 /* ==============================
    Footer Logo
 ============================== */
 .footer .footerLogoBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
 }
 
 .footer .footerLogo {
-  display: block;
+    display: inline-block;
 }
 
 .footer .footerLogo img {
-  display: block;
-  width: 12rem;
-  height: auto;
+    display: block;
+    width: 12.6rem;
+    height: auto;
 }
 
 /* ==============================
    Footer Info
 ============================== */
 .footer .footerInfoBox {
-  color: #fff;
+    color: var(--white);
+    padding-bottom: 0.2rem;
 }
 
 .footer .footerInfoBox p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 1.7;
-  color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75;
+    letter-spacing: -0.03em;
+    word-break: keep-all;
 }
 
 .footer .footerInfoBox .copyright {
-  margin-top: 1.4rem;
-  color: rgba(255, 255, 255, 0.75);
+    margin-top: 1.6rem;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 /* ==============================
    Footer SNS
 ============================== */
 .footer .footerSnsList {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 0.6rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.7rem;
+    padding-bottom: 0.3rem;
 }
 
 .footer .footerSnsList li {
+    flex-shrink: 0;
 }
 
 .footer .footerSnsList li a {
-  display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
 .footer .footerSnsList li a img {
-  display: block;
-  width: 2.8rem;
-  height: 2.8rem;
-  object-fit: contain;
+    display: block;
+    width: 3.2rem;
+    height: 3.2rem;
+    object-fit: contain;
 }
 
 /* ==============================
    Responsive - Tablet
 ============================== */
 @media (max-width: 1024px) {
-  .footer .footerContent {
-    grid-template-columns: 14rem 1fr 10rem;
-    gap: 3rem;
-  }
+    .footer {
+        padding: 4.4rem 0;
+    }
 
-  .footer .footerLogo img {
-    width: 11rem;
-  }
+    .footer .footerContent {
+        grid-template-columns: 13rem minmax(0, 1fr) 11rem;
+        column-gap: 3.2rem;
+    }
+
+    .footer .footerLogo img {
+        width: 11.4rem;
+    }
+
+    .footer .footerInfoBox p {
+        font-size: 1.18rem;
+    }
+
+    .footer .footerSnsList li a,
+    .footer .footerSnsList li a img {
+        width: 2.9rem;
+        height: 2.9rem;
+    }
 }
 
 /* ==============================
    Responsive - Mobile
 ============================== */
 @media (max-width: 768px) {
-  .footer {
-    padding: 4.8rem 0;
-  }
+    .footer {
+        padding: 4rem 0;
+    }
 
-  .footer .footerInner {
-    min-height: auto;
-  }
+    .footer .footerLinkList {
+        flex-wrap: wrap;
+        gap: 1.2rem 1.8rem;
+        margin-bottom: 3.2rem;
+    }
 
-  .footer .footerLinkList {
-    flex-wrap: wrap;
-    gap: 1rem 1.6rem;
-    margin-bottom: 3.2rem;
-  }
+    .footer .footerLinkList li a {
+        font-size: 1.25rem;
+    }
 
-  .footer .footerLinkList li a {
-    font-size: 1.3rem;
-  }
+    .footer .footerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+        text-align: center;
+    }
 
-  .footer .footerContent {
-    display: flex;
-    flex-direction: column;
-    gap: 2.4rem;
-    text-align: center;
-  }
+    .footer .footerLogoBox {
+        justify-content: center;
+        order: 1;
+    }
 
-  .footer .footerLogo img {
-    width: 12rem;
-  }
+    .footer .footerInfoBox {
+        order: 2;
+        padding-bottom: 0;
+    }
 
-  .footer .footerSnsList {
-    justify-content: center;
-  }
+    .footer .footerInfoBox p {
+        font-size: 1.15rem;
+        line-height: 1.7;
+    }
+
+    .footer .footerInfoBox .copyright {
+        margin-top: 1.4rem;
+    }
+
+    .footer .footerSnsList {
+        order: 3;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .footer .footerLogo img {
+        width: 12rem;
+    }
 }

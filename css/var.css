@@ -2,7 +2,7 @@
     /* color_main */
     --main-primary: #8d0007;
     --main-support: #6e080d;
-    --main-secondary: #55433c;
+    --main-secondary: var(--gray-variant-03);
     --main-deepBase: #352c29;
     --main-natural: #959595;
     --main-white: #f8f8f8;
@@ -18,6 +18,10 @@
     --red-variant-02: #ed0021;
     --red-variant-03: #ce001e;
     --red-variant-04: #e60012;
+
+    --gray-variant-01: #8a776f;
+    --gray-variant-02: #4d3931;
+    --gray-variant-03: #55433c;
 
     /* shadow */
     --shadow-01: 0px 2px 4px rgba(0, 0, 0, 0.08);

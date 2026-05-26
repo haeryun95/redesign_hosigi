@@ -25,17 +25,17 @@ section.storySection {
     width: 30%;
     font-size: 2.8rem;
     font-weight: 800;
-    color: #4d3931;
+    color: var(--gray-variant-02);
 }
 
 .storySection .storySectionTitleBox h2 .highlight {
-    color: #e60012;
+    color: var(--red-variant-04);
 }
 
 .storySection .storySectionTitleBox .line {
     width: 100%;
     height: 1px;
-    background: #8a776f;
+    background: var(--gray-variant-01);
     opacity: 0.7;
     border-bottom: 1px solid var(--main-deepBase);
 }
@@ -121,7 +121,7 @@ section.storySection {
     overflow: hidden;
     border-radius: 1.6rem;
     background: transparent;
-    box-shadow: none;
+    box-shadow: var(--shadow-02);
 }
 
 .storySection .storyGrid .storyBanner img {
