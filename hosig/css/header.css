@@ -173,8 +173,9 @@ MB 버전
 
     /* 햄버거 버튼 */
     .header .mb_menu_btn {
-        width: 4.2rem;
-        height: 4.2rem;
+        margin-top: 1.4rem;
+        width: 2.4rem;
+        height: 2.4rem;
         border: none;
         background: transparent;
         cursor: pointer;
@@ -188,8 +189,8 @@ MB 버전
 
     .header .mb_menu_btn span {
         display: block;
-        width: 2.8rem;
-        height: 0.3rem;
+        width: 2.4rem;
+        height: 0.2rem;
         background: var(--main-primary);
         border-radius: 99rem;
         transition: all 0.3s ease;
@@ -233,8 +234,8 @@ MB 버전
 
     /* 닫기 버튼 */
     .header .mb_close_btn {
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         position: relative;
         border: none;
         background: transparent;
@@ -245,7 +246,7 @@ MB 버전
         position: absolute;
         left: 50%;
         top: 50%;
-        width: 2.6rem;
+        width: 2rem;
         height: 0.25rem;
         background: var(--main-primary);
         border-radius: 99rem;
@@ -374,7 +375,21 @@ MB 버전
         overflow: hidden;
     }
 }
+.img_Box.pc {
+    display: block;
+}
+.img_Box.mobile {
+    display: none;
+}
 
+@media screen and (max-width: 786px) {
+    .img_Box.pc {
+        display: none;
+    }
+    .img_Box.mobile {
+        display: block;
+    }
+}
 @media screen and (max-width: 480px) {
     .header {
         height: 6.4rem;

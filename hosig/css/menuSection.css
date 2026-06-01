@@ -395,7 +395,7 @@ section.menuSection,
     }
 
     .menuSection .menu_tab_contents .menuCard {
-        height: 26rem;
+        height: 23rem;
     }
 
     .menuSection .menu_tab_contents .menuText h3 {
@@ -609,6 +609,14 @@ section.menuSection,
    작은 모바일
 ============================== */
 
+@media screen and (max-width: 1024px) {
+    .menuSection .menu_tab_contents .menuCard > img:not(.menuBadge) {
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        transform: scale(1.1);
+    }
+}
 @media screen and (max-width: 480px) {
     .menuSection {
         padding: 4.8rem 0;
